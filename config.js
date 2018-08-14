@@ -74,18 +74,23 @@ module.exports = {
     //'torbrowser',
     //'transmission',
     // 'visual-studio-code',
-    //'vlc',
+    'vlc',
     // 'xquartz',
+    '3xcphone', // TODO check if correct version
     'alfred',
     'appcleaner',
     'fantastical',
+    'intel-power-gadget', // TODO check if current version
+    'intellij-idea', // TODO check if current version
     'keepassxc',
     'keepingyouawake',
+    'logitech-gaming-software', // TODO check if current version
     'qlcolorcode',
     'qlmarkdown',
     'qlprettypatch',
     'qlstephen',
     'quicklook-json',
+    'setapp',  // TODO check if current version
     'sourcetree',
     'sublime-text',
     'viscosity',
