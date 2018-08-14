@@ -16,20 +16,20 @@ export PATH=/usr/local/bin:$PATH
 #source "/Users/$(whoami)/Downloads/google-cloud-sdk/completion.zsh.inc"
 
 # NPM
-# TODO needed?
+# TODO tardy needed?
 # export PATH=$PATH:/usr/local/share/npm/bin
 
-# TODO needed?
+# TODO tardy needed?
 # export PATH=$PATH:~/.nvm/v0.10.22/bin
 
-# TODO needed?
+# TODO tardy needed?
 # export PATH=${PATH}:/usr/local/opt/gettext/bin
 
-# TODO needed?
+# TODO tardy needed?
 # export PATH="$PATH:`yarn global bin`"
 #export PATH="$PATH:`yarn global bin`:$HOME/.config/yarn/global/node_modules/.bin"
 
-# TODO needed?
+# TODO tardy needed?
 #export PYENV_ROOT="$HOME/.pyenv"
 #export PATH="$PYENV_ROOT/bin:$PATH"
 #eval "$(/usr/local/bin/pyenv init -)"
