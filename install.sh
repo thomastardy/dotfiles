@@ -664,9 +664,9 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/";ok
 
 # running "Show hidden files by default"
 # defaults write com.apple.finder AppleShowAllFiles -bool true;ok
-#
-# running "Show all filename extensions"
-# defaults write NSGlobalDomain AppleShowAllExtensions -bool true;ok
+
+running "Show all filename extensions"
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true;ok
 
 running "Show status bar"
 defaults write com.apple.finder ShowStatusBar -bool true;ok
