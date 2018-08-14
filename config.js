@@ -84,7 +84,7 @@ module.exports = {
     'intellij-idea',
     'keepassxc',
     'keepingyouawake',
-    'logitech-gaming-software',
+    'homebrew/cask-drivers/logitech-gaming-software',
     'qlcolorcode',
     'qlmarkdown',
     'qlprettypatch',
