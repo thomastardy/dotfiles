@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#########################################
+# Commands to forwart mssql port to parallels
+alias mssql.ncat='sudo ncat --sh-exec "ncat 10.211.55.9 1433" -l 1433 --keep-open'
+
 #################################
 # Simple Program Name Shortening
 alias g=git
@@ -70,9 +74,9 @@ alias path='echo -e ${PATH//:/\\n}'
 alias pbcopynn='tr -d "\n" | pbcopy'
 
 # firewall management
-alias port-forward-enable="echo 'rdr pass inet proto tcp from any to any port 2376 -> 127.0.0.1 port 2376' | sudo pfctl -ef -"
-alias port-forward-disable="sudo pfctl -F all -f /etc/pf.conf"
-alias port-forward-list="sudo pfctl -s nat"
+# alias port-forward-enable="echo 'rdr pass inet proto tcp from any to any port 2376 -> 127.0.0.1 port 2376' | sudo pfctl -ef -"
+# alias port-forward-disable="sudo pfctl -F all -f /etc/pf.conf"
+# alias port-forward-list="sudo pfctl -s nat"
 
 # push git repo, but first, use git-up to make sure you are in sync and rebased with the remote
 alias pushup="git-up && git push"
@@ -84,9 +88,9 @@ alias qltext='xattr -wx com.apple.FinderInfo "54 45 58 54 21 52 63 68 00 00 00 0
 alias reload="exec $SHELL -l"
 
 # Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
+# alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight
-alias spoton="sudo mdutil -a -i on"
+# alias spoton="sudo mdutil -a -i on"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; mas upgrade; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
@@ -96,7 +100,34 @@ alias vtop="vtop --theme wizard"
 alias jsonfix="pbpaste | jq . | pbcopy"
 
 alias lookbusy="cat /dev/urandom | hexdump -C | grep \"34 32\""
-alias td="todo.sh"
-alias tda="todo.sh add"
-alias tdl="todo.sh list"
-alias tdd="todo.sh do"
+# alias td="todo.sh"
+# alias tda="todo.sh add"
+# alias tdl="todo.sh list"
+# alias tdd="todo.sh do"
+
+# Restart Apache on Mac
+alias apache.start="sudo apachectl start"
+alias apache.stop="sudo apachectl stop"
+alias apache.restart="sudo apachectl restart"
+
+# Check activities
+alias away='pmset -g log | grep "Display is turned" | tail -n 6'
+
+# Git cleanup commands
+alias git.cleanup='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | grep -v release | xargs -n 1 git branch -d'
+
+# Backup
+alias backup.speedup="sudo sysctl debug.lowpri_throttle_enabled=0"
+
+# Docker
+alias docker.init.default='eval "$(docker-machine env default)"'
+alias docker.init.aws01='eval "$(docker-machine env aws01)"'
+alias docker.init.IB-OPS-ELK-DOCKER='eval "$(docker-machine env IB-OPS-ELK-DOCKER)"'
+alias docker.init.isbops='eval "$(docker-machine env isbops)"'
+# http://blog.yohanliyanage.com/2015/05/docker-clean-up-after-yourself/
+alias docker.cleanup.containers='docker rm -v $(docker ps -a -q -f status=exited)'
+alias docker.cleanup.images='docker rmi $(docker images -f "dangling=true" -q)'
+alias docker.cleanup.volumes='docker run -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker:/var/lib/docker --rm martin/docker-cleanup-volumes'
+
+# npm
+alias npm.outdated.globals='npm outdated -g --depth=0'
