@@ -76,21 +76,20 @@ module.exports = {
     // 'visual-studio-code',
     'vlc',
     // 'xquartz',
-    '3xcphone', // TODO check if correct version
+    '3xcphone',
     'alfred',
     'appcleaner',
     'fantastical',
-    'intel-power-gadget', // TODO check if current version
-    'intellij-idea', // TODO check if current version
+    'intel-power-gadget',
+    'intellij-idea',
     'keepassxc',
     'keepingyouawake',
-    'logitech-gaming-software', // TODO check if current version
+    'logitech-gaming-software',
     'qlcolorcode',
     'qlmarkdown',
     'qlprettypatch',
     'qlstephen',
     'quicklook-json',
-    'setapp',  // TODO check if current version
     'sourcetree',
     'sublime-text',
     'viscosity',
