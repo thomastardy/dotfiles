@@ -85,6 +85,7 @@ module.exports = {
     'keepassxc',
     'keepingyouawake',
     'homebrew/cask-drivers/logitech-gaming-software',
+    'parallels',
     'qlcolorcode',
     'qlmarkdown',
     'qlprettypatch',
