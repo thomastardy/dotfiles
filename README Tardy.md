@@ -38,8 +38,7 @@
    * IntelliJ Plugins
    * Parallels Configuration
    * Configure Sourcetree
-* Check Login Items
-(https://raw.githubusercontent.com/thomastardy/dotfiles/master/img/login-items.png)
+* ![Check Login Items](https://raw.githubusercontent.com/thomastardy/dotfiles/master/img/login-items.png)
 * Copy
    * Parallels VM
    * MpDocuments
@@ -49,5 +48,4 @@
    * Tools
 * Install Fonts (smb://hengst.mptechnology.com/admin/marketing/fonts/Noto_Sans)
 * Time Machine
-   * Configure Excludes
-(https://raw.githubusercontent.com/thomastardy/dotfiles/master/img/time-machine-excludes.png)
+   * ![Configure Excludes](https://raw.githubusercontent.com/thomastardy/dotfiles/master/img/time-machine-excludes.png)
