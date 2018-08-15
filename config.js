@@ -45,7 +45,7 @@ module.exports = {
     'maven',
     'netcat',
     'ssh-copy-id',
-    'sshpass',
+    'https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb',
     'telnet'
   ],
   cask: [
