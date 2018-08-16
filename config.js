@@ -30,6 +30,7 @@ module.exports = {
     // TODO tardy check if required 'moreutils',
     'nmap',
     // TODO tardy check if required 'openconnect',
+    'pcre',
     // TODO tardy check if required 'reattach-to-user-namespace',
     // better/more recent version of screen
     // TODO tardy check if required 'homebrew/dupes/screen',
