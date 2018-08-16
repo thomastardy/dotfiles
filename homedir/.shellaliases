@@ -181,3 +181,8 @@ alias stalvstppullrequests='open https://kepler.mptechnology.ch/bitbucket/projec
 alias stalvstpjiraboard='open https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=30'
 alias stalvstp='stalvstpjenkins; stalvstppullrequests; stalvstpjiraboard'
 alias staavstp='staaintellij; staasourcetree; staaparallels'
+
+# private aliases
+alias cloatiming='osascript -e '"'"'tell application "/Applications/Setapp/Timing.app/Contents/Library/LoginItems/TimingHelper.app/Contents/MacOS/TimingHelper" to quit'"'"''
+alias cloagooglesync='osascript -e '"'"'tell application "/Applications/Backup and Sync.app/Contents/MacOS/Backup and Sync" to quit'"'"''
+alias goprivate='cloatiming; cloagooglesync'
