@@ -6,7 +6,7 @@ alias mssql.ncat='sudo ncat --sh-exec "ncat 10.211.55.9 1433" -l 1433 --keep-ope
 
 #################################
 # Simple Program Name Shortening
-alias g=git
+# alias g=git
 
 #############################
 # Utilities
@@ -135,6 +135,7 @@ alias npm.outdated.globals='npm outdated -g --depth=0'
 alias reboot='sudo reboot'
 alias shutdown='sudo halt'
 alias editdotfiles='subl /Users/ttardy/.dotfiles'
+alias gotodotfiles='cd /Users/ttardy/.dotfiles'
 alias sysprefs='open "x-apple.systempreferences:"'
 alias staaviscosity='open -a /Applications/Viscosity.app'
 
@@ -158,6 +159,7 @@ alias stalsayjiraopeninrelease='open https://jira.mptechnology.ch/issues/?filter
 alias stalsayjiraboard='open https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=37'
 alias stalsay='stalsayjenkins; stalsaypullrequests; stalsaywiki; stalsayjiraopeninrelease; stalsayjiraboard'
 alias staasay='staaintellij; staasourcetree; staaparallels'
+alias gotosay='cd /Users/ttardy/Projects/sayano/sayano-app'
 
 # mp aliases for Pexapark
 alias stalpexjenkins='open http://mistral.pexapark.com/jenkins/'
@@ -165,6 +167,7 @@ alias stalpexpullrequests='open https://bitbucket.org/fmupexapark/pexapark-mvp/p
 alias stalpexjiraboard='open https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX'
 alias stalpex='stalpexjenkins; stalpexpullrequests; stalpexjiraboard'
 alias staapex='staaintellij; staapostgres; staasourcetree'
+alias gotopex='cd /Users/ttardy/Projects/pexapark/pexapark-mvp'
 
 # mp alias for Evalueserve
 alias stalisbjenkins='open http://reactor.mptechnology.com/jenkins/view/isb-customer/'
@@ -175,6 +178,7 @@ alias stalisbjiraopeninrelease='open https://services.mptechnology.ch/jira/issue
 alias stalisbjiraboard='open https://services.mptechnology.ch/jira/secure/RapidBoard.jspa?rapidView=21'
 alias stalisb='stalisbjenkins; stalibbjenkins; stalisbpullrequests; stalibbpullrequests; stalisbjiraopeninrelease; stalisbjiraboard'
 alias staaisb='staaintellij; staasourcetree, staaparallels'
+alias gotoisb='cd /Users/ttardy/Projects/insightbee/isb-customer'
 
 # mp alias for VSTP
 alias stalvstpjenkins='open http://reactor.mptechnology.com/jenkins/view/vstp/'
