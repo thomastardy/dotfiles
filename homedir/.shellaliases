@@ -132,8 +132,8 @@ alias docker.cleanup.volumes='docker run -v /var/run/docker.sock:/var/run/docker
 alias npm.outdated.globals='npm outdated -g --depth=0'
 
 # usefull aliases
-alias reboot='sudo reboot'
-alias shutdown='sudo halt'
+alias reboot='sudo shutdown -r now'
+alias shutdown='sudo shutdown -h now'
 alias editdotfiles='subl /Users/ttardy/.dotfiles'
 alias gotodotfiles='cd /Users/ttardy/.dotfiles'
 alias sysprefs='open "x-apple.systempreferences:"'
