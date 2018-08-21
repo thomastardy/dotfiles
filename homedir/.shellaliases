@@ -132,8 +132,8 @@ alias docker.cleanup.volumes='docker run -v /var/run/docker.sock:/var/run/docker
 alias npm.outdated.globals='npm outdated -g --depth=0'
 
 # usefull aliases
-alias reboot='sudo shutdown -r now'
-alias shutdown='sudo shutdown -h now'
+alias reboot='osascript -e '"'"'tell application "System Events" to restart'"'"''
+alias shutdown='osascript -e '"'"'tell application "System Events" to shut down'"'"''
 alias editdotfiles='subl /Users/ttardy/.dotfiles'
 alias gotodotfiles='cd /Users/ttardy/.dotfiles'
 alias sysprefs='open "x-apple.systempreferences:"'
@@ -146,6 +146,7 @@ alias stalmp='staltimetrack'
 alias staamp='open -a /Applications/Microsoft\ OneNote.app; open -a /Applications/Mail.app; open -a /Applications/Fantastical\ 2.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/ForkLift.app; mp.mount.hengst.sysadmin; backup.speedup'
 alias mp.mount.hengst.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst.mptechnology.com/sysadmin"'"'"''
 alias mp.dyndns='~/Scripts/dyn.sh'
+alias mp.vpn='mp.dyndns && staaviscosity'
 alias staaintellij='open -a /Applications/IntelliJ\ IDEA.app'
 alias staasourcetree='open -a /Applications/SourceTree.app'
 alias staaparallels='open -a /Applications/Parallels\ Desktop.app'
