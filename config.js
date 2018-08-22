@@ -47,7 +47,8 @@ module.exports = {
     'netcat',
     'ssh-copy-id',
     'https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb',
-    'telnet'
+    'telnet',
+    'yarn'
   ],
   cask: [
     //'adium',

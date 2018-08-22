@@ -3,7 +3,6 @@
 0 1 15 * *  brew upgrade
 0 1 45 * *  brew cleanup -s
 0 2 * * *  brew cask outdated | xargs brew cask reinstall
-0 2 45 * *  brew cask cleanup
 # npm
 0 3 * * *  npm install npm -g
 # yarn
