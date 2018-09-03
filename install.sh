@@ -648,8 +648,8 @@ bot "Finder Configs"
 running "Keep folders on top when sorting by name (Sierra only)"
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
-running "Allow quitting via ⌘ + Q; doing so will also hide desktop icons"
-defaults write com.apple.finder QuitMenuItem -bool true;ok
+# running "Allow quitting via ⌘ + Q; doing so will also hide desktop icons"
+# defaults write com.apple.finder QuitMenuItem -bool true;ok
 
 running "Disable window animations and Get Info animations"
 defaults write com.apple.finder DisableAllAnimations -bool true;ok
