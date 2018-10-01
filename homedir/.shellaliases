@@ -20,15 +20,15 @@ alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
 # alias bpc='git add -A . && git cam "$(buzzphrase 2)" && git push'
 
 # recursive dos2unix in current directory
-alias dos2lf='dos2unix `find ./ -type f`'
+alias dos.2lf='dos2unix `find ./ -type f`'
 
 # Flush the DNS on Mac
-alias dnsflush='dscacheutil -flushcache'
+alias dns.flush='dscacheutil -flushcache'
 
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
 # Finally, clear download history from quarantine. https://mths.be/bum
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+alias empty.trash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
 # Files being opened
 alias files.open='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep|grep open'
@@ -46,11 +46,11 @@ alias files.usage.user='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias iplocal="ipconfig getifaddr en0"
-alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+alias ip.local="ipconfig getifaddr en0"
+alias ip.all="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # Show active network interfaces
-alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+alias if.active="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 
 # Show network connections
 # Often useful to prefix with SUDO to see more system level network usage
@@ -72,7 +72,7 @@ alias ll='ls -l -G -h -p '
 alias path='echo -e ${PATH//:/\\n}'
 
 # Copy and paste and prune the usless newline
-alias pbcopynn='tr -d "\n" | pbcopy'
+alias pbcopy.nn='tr -d "\n" | pbcopy'
 
 # firewall management
 # alias port-forward-enable="echo 'rdr pass inet proto tcp from any to any port 2376 -> 127.0.0.1 port 2376' | sudo pfctl -ef -"
@@ -101,7 +101,7 @@ alias vtop="vtop --theme wizard"
 
 alias jsonfix="pbpaste | jq . | pbcopy"
 
-alias lookbusy="cat /dev/urandom | hexdump -C | grep \"34 32\""
+alias look.busy="cat /dev/urandom | hexdump -C | grep \"34 32\""
 # alias td="todo.sh"
 # alias tda="todo.sh add"
 # alias tdl="todo.sh list"
@@ -132,61 +132,56 @@ alias docker.cleanup.volumes='docker run -v /var/run/docker.sock:/var/run/docker
 alias npm.outdated.globals='npm outdated -g --depth=0'
 
 # usefull aliases
-alias reboot='osascript -e '"'"'tell application "System Events" to restart'"'"''
-alias shutdown='osascript -e '"'"'tell application "System Events" to shut down'"'"''
-alias editdotfiles='subl /Users/ttardy/.dotfiles'
-alias gotodotfiles='cd /Users/ttardy/.dotfiles'
-alias sysprefs='open "x-apple.systempreferences:"'
-alias staaviscosity='open -a /Applications/Viscosity.app'
+alias reboot='cd; clear; osascript -e '"'"'tell application "System Events" to restart'"'"''
+alias shutdown='cd; clear; osascript -e '"'"'tell application "System Events" to shut down'"'"''
+alias dotfiles.edit='subl /Users/ttardy/.dotfiles'
+alias dotfiles.cd='cd /Users/ttardy/.dotfiles'
+alias sys.prefs='open "x-apple.systempreferences:"'
+alias sta.viscosity='open -a /Applications/Viscosity.app'
 
 # mp aliases
-alias staltimetrack='open http://hengst.mptechnology.com/timetrack/app'
-alias stalwiki='open https://wiki.mptechnology.ch/display/MPT'
-alias stalmp='staltimetrack'
-alias staamp='open -a /Applications/Microsoft\ OneNote.app; open -a /Applications/Mail.app; open -a /Applications/Fantastical\ 2.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/ForkLift.app; mp.mount.hengst.sysadmin; backup.speedup'
-alias mp.mount.hengst.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst.mptechnology.com/sysadmin"'"'"''
+alias stal.timetrack='open http://hengst.mptechnology.com/timetrack/app'
+alias stal.wiki='open https://wiki.mptechnology.ch/display/MPT'
+alias mp.stal='stal.timetrack'
+alias mp.staa='open -a /Applications/Microsoft\ OneNote.app; open -a /Applications/Mail.app; open -a /Applications/Fantastical\ 2.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/ForkLift.app; mp.mount.hengst.sysadmin; backup.speedup'
+alias mp.mount.hengst.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/sysadmin"'"'"''
+alias mp.mount.hengst.mptechnology.com.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst.mptechnology.com/sysadmin"'"'"''
 alias mp.dyndns='~/Scripts/dyn.sh'
-alias mp.vpn='mp.dyndns && staaviscosity'
-alias staaintellij='open -a /Applications/IntelliJ\ IDEA.app'
-alias staasourcetree='open -a /Applications/SourceTree.app'
-alias staaparallels='open -a /Applications/Parallels\ Desktop.app'
-alias staapostgres='open -a /Applications/Postgres.app'
+alias mp.vpn='mp.dyndns && staviscosity'
+alias sta.intellij='open -a /Applications/IntelliJ\ IDEA.app'
+alias sta.sourcetree='open -a /Applications/SourceTree.app'
+alias sta.parallels='open -a /Applications/Parallels\ Desktop.app'
+alias sta.postgres='open -a /Applications/Postgres.app'
 
 # mp aliases for SAYANO
-alias stalsayjenkins='open http://reactor.mptechnology.com/jenkins/view/sayano/'
-alias stalsaypullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/SAY/repos/sayano-app/pull-requests'
-alias stalsaywiki='open https://wiki.mptechnology.ch/display/MPT/SAYANO'
-alias stalsayjiraopeninrelease='open https://jira.mptechnology.ch/issues/?filter=12874'
-alias stalsayjiraboard='open https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=37'
-alias stalsay='stalsayjenkins; stalsaypullrequests; stalsaywiki; stalsayjiraopeninrelease; stalsayjiraboard'
-alias staasay='staaintellij; staasourcetree; staaparallels'
-alias gotosay='cd /Users/ttardy/Projects/sayano/sayano-app'
+alias say.stal.jenkins='open http://reactor.mptechnology.com/jenkins/view/sayano/'
+alias say.stal.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/SAY/repos/sayano-app/pull-requests'
+alias say.stal.wiki='open https://wiki.mptechnology.ch/display/MPT/SAYANO'
+alias say.stal.jiraopeninrelease='open https://jira.mptechnology.ch/issues/?filter=12874'
+alias say.stal.jiraboard='open https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=37'
+alias say.stal='say.stal.jenkins; say.stal.pullrequests; say.stal.wiki; say.stal.jiraopeninrelease; say.stal.jiraboard'
+alias say.staa='sta.intellij; sta.sourcetree; sta.parallels'
+alias say.cd='cd /Users/ttardy/Projects/sayano/sayano-app'
+alias say.mt='open "mailto:jan.hedding@sayano.ch,reto.frei@sayano.ch,jeannine.wirz@sayano.ch,donat.grimm@metagon.ch?cc=sayanoteam@mptechnology.ch&amp&subject=SAYANO%20App%20Release%20%3CVERSION%3E%20auf%20INT%20installiert&amp&body=Guten%20Tag%0A%0AWir%20haben%20soeben%20den%20Release%20%3CVERSION%3E%20der%20SAYANO%20App%20auf%20der%20Integrationsumgebung%20installiert.%0Ahttps%3A%2F%2Fint-app.sayano.ch%0A%0AWir%20bitten%20Sie%20alle%20Tickets%20im%20Status%20'Integration%20Testing'%20zu%20verifizieren%20und%20entweder%20zur%C3%BCckzuweisen%20oder%20zu%20akzeptieren.%0AWenn%20Sie%20sich%20bei%20JIRA%20anmelden%2C%20finden%20Sie%20die%20Liste%20der%20zu%20testenden%20Tickets%20unter%3A%20https%3A%2F%2Fjira.mptechnology.ch%2Fissues%2F%3Ffilter%3D12873%0A%0ABei%20Fragen%20stehen%20wir%20Ihnen%20gerne%20zur%20Verf%C3%BCgung.%0A%0AFreundliche%20Gr%C3%BCsse%0AThomas%20Tardy"'
 
 # mp aliases for Pexapark
-alias stalpexjenkins='open http://mistral.pexapark.com/jenkins/'
-alias stalpexpullrequests='open https://bitbucket.org/fmupexapark/pexapark-mvp/pull-requests/'
-alias stalpexjiraboard='open https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX'
-alias stalpex='stalpexjenkins; stalpexpullrequests; stalpexjiraboard'
-alias staapex='staaintellij; staapostgres; staasourcetree'
-alias gotopex='cd /Users/ttardy/Projects/pexapark/pexapark-mvp'
+alias pex.stal.jenkins='open http://mistral.pexapark.com/jenkins/'
+alias pex.stal.pullrequests='open https://bitbucket.org/fmupexapark/pexapark-mvp/pull-requests/'
+alias pex.stal.jiraboard='open https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX'
+alias pex.stal='pex.stal.jenkins; pex.stal.pullrequests; pex.stal.jiraboard'
+alias pex.staa='sta.intellij; sta.sourcetree; sta.parallels'
+alias pex.cd='cd /Users/ttardy/Projects/pexapark/pexapark-mvp'
 
 # mp alias for Evalueserve
-alias stalisbjenkins='open http://reactor.mptechnology.com/jenkins/view/isb-customer/'
-alias stalibbjenkins='open http://reactor.mptechnology.com/jenkins/view/isb-khive/'
-alias stalisbpullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-customer/pull-requests'
-alias stalibbpullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-khive/pull-requests'
-alias stalisbjiraopeninrelease='open https://services.mptechnology.ch/jira/issues/?filter=12406'
-alias stalisbjiraboard='open https://services.mptechnology.ch/jira/secure/RapidBoard.jspa?rapidView=21'
-alias stalisb='stalisbjenkins; stalibbjenkins; stalisbpullrequests; stalibbpullrequests; stalisbjiraopeninrelease; stalisbjiraboard'
-alias staaisb='staaintellij; staasourcetree, staaparallels'
-alias gotoisb='cd /Users/ttardy/Projects/insightbee/isb-customer'
-
-# mp alias for VSTP
-alias stalvstpjenkins='open http://reactor.mptechnology.com/jenkins/view/vstp/'
-alias stalvstppullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/VSTP/repos/vstp/pull-requests'
-alias stalvstpjiraboard='open https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=30'
-alias stalvstp='stalvstpjenkins; stalvstppullrequests; stalvstpjiraboard'
-alias staavstp='staaintellij; staasourcetree; staaparallels'
+alias isb.stal.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-customer/'
+alias ibb.stal.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-khive/'
+alias isb.stal.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-customer/pull-requests'
+alias ibb.stal.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-khive/pull-requests'
+alias isb.stal.jiraopeninrelease='open https://services.mptechnology.ch/jira/issues/?filter=12406'
+alias isb.stal.jiraboard='open https://services.mptechnology.ch/jira/secure/RapidBoard.jspa?rapidView=21'
+alias isb.stal='isb.stal.jenkins; ibb.stal.jenkins; isb.stal.pullrequests; ibb.stal.pullrequests; isb.stal.jiraopeninrelease; isb.stal.jiraboard'
+alias isb.staa='sta.intellij; sta.sourcetree; sta.parallels'
+alias isb.cd='cd /Users/ttardy/Projects/insightbee/isb-customer'
 
 # private aliases
 alias cloatiming='osascript -e '"'"'tell application "/Applications/Setapp/Timing.app/Contents/Library/LoginItems/TimingHelper.app/Contents/MacOS/TimingHelper" to quit'"'"''
