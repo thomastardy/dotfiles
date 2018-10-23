@@ -28,7 +28,7 @@ alias dns.flush='dscacheutil -flushcache'
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
 # Finally, clear download history from quarantine. https://mths.be/bum
-alias empty.trash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+alias trash.empty="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
 # Files being opened
 alias files.open='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep|grep open'
@@ -137,50 +137,51 @@ alias shutdown='cd; clear; osascript -e '"'"'tell application "System Events" to
 alias dotfiles.edit='subl /Users/ttardy/.dotfiles'
 alias dotfiles.cd='cd /Users/ttardy/.dotfiles'
 alias sys.prefs='open "x-apple.systempreferences:"'
-alias sta.viscosity='open -a /Applications/Viscosity.app'
+alias app.viscosity='open -a /Applications/Viscosity.app'
 
 # mp aliases
-alias stal.timetrack='open http://hengst.mptechnology.com/timetrack/app'
-alias stal.wiki='open https://wiki.mptechnology.ch/display/MPT'
-alias mp.stal='stal.timetrack'
-alias mp.staa='open -a /Applications/Microsoft\ OneNote.app; open -a /Applications/Mail.app; open -a /Applications/Fantastical\ 2.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/ForkLift.app; mp.mount.hengst.sysadmin; backup.speedup'
+alias link.timetrack='open http://hengst.mptechnology.com/timetrack/app'
+alias link.wiki='open https://wiki.mptechnology.ch/display/MPT'
+alias mp.link='link.timetrack'
+alias mp.app='open -a /Applications/Microsoft\ OneNote.app; open -a /Applications/Mail.app; open -a /Applications/Fantastical\ 2.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/ForkLift.app; mp.mount.hengst.sysadmin; backup.speedup'
 alias mp.mount.hengst.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/sysadmin"'"'"''
 alias mp.mount.hengst.mptechnology.com.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst.mptechnology.com/sysadmin"'"'"''
 alias mp.dyndns='~/Scripts/dyn.sh'
-alias mp.vpn='mp.dyndns && staviscosity'
-alias sta.intellij='open -a /Applications/IntelliJ\ IDEA.app'
-alias sta.sourcetree='open -a /Applications/SourceTree.app'
-alias sta.parallels='open -a /Applications/Parallels\ Desktop.app'
-alias sta.postgres='open -a /Applications/Postgres.app'
+alias mp.vpn='mp.dyndns && app.viscosity'
+alias app.intellij='open -a /Applications/IntelliJ\ IDEA.app'
+alias app.sourcetree='open -a /Applications/SourceTree.app'
+alias app.parallels='open -a /Applications/Parallels\ Desktop.app'
+alias app.postgres='open -a /Applications/Postgres.app'
 
 # mp aliases for SAYANO
-alias say.stal.jenkins='open http://reactor.mptechnology.com/jenkins/view/sayano/'
-alias say.stal.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/SAY/repos/sayano-app/pull-requests'
-alias say.stal.wiki='open https://wiki.mptechnology.ch/display/MPT/SAYANO'
-alias say.stal.jiraopeninrelease='open https://jira.mptechnology.ch/issues/?filter=12874'
-alias say.stal.jiraboard='open https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=37'
-alias say.stal='say.stal.jenkins; say.stal.pullrequests; say.stal.wiki; say.stal.jiraopeninrelease; say.stal.jiraboard'
-alias say.staa='sta.intellij; sta.sourcetree; sta.parallels'
+alias say.link.jenkins='open http://reactor.mptechnology.com/jenkins/view/sayano/'
+alias say.link.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/SAY/repos/sayano-app/pull-requests'
+alias say.link.wiki='open https://wiki.mptechnology.ch/display/MPT/SAYANO'
+alias say.link.jiraopeninrelease='open https://jira.mptechnology.ch/issues/?filter=12874'
+alias say.link.jiraboard='open https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=37'
+alias say.link='say.link.jenkins; say.link.pullrequests; say.link.wiki; say.link.jiraopeninrelease; say.link.jiraboard'
+alias say.app='say.cd; app.intellij; app.sourcetree; app.parallels'
+alias say.start='mp.app; mp.link; say.app; say.link'
 alias say.cd='cd /Users/ttardy/Projects/sayano/sayano-app'
 alias say.mt='open "mailto:jan.hedding@sayano.ch,reto.frei@sayano.ch,jeannine.wirz@sayano.ch,donat.grimm@metagon.ch?cc=sayanoteam@mptechnology.ch&amp&subject=SAYANO%20App%20Release%20%3CVERSION%3E%20auf%20INT%20installiert&amp&body=Guten%20Tag%0A%0AWir%20haben%20soeben%20den%20Release%20%3CVERSION%3E%20der%20SAYANO%20App%20auf%20der%20Integrationsumgebung%20installiert.%0Ahttps%3A%2F%2Fint-app.sayano.ch%0A%0AWir%20bitten%20Sie%20alle%20Tickets%20im%20Status%20'Integration%20Testing'%20zu%20verifizieren%20und%20entweder%20zur%C3%BCckzuweisen%20oder%20zu%20akzeptieren.%0AWenn%20Sie%20sich%20bei%20JIRA%20anmelden%2C%20finden%20Sie%20die%20Liste%20der%20zu%20testenden%20Tickets%20unter%3A%20https%3A%2F%2Fjira.mptechnology.ch%2Fissues%2F%3Ffilter%3D12873%0A%0ABei%20Fragen%20stehen%20wir%20Ihnen%20gerne%20zur%20Verf%C3%BCgung.%0A%0AFreundliche%20Gr%C3%BCsse%0AThomas%20Tardy"'
 
 # mp aliases for Pexapark
-alias pex.stal.jenkins='open http://mistral.pexapark.com/jenkins/'
-alias pex.stal.pullrequests='open https://bitbucket.org/fmupexapark/pexapark-mvp/pull-requests/'
-alias pex.stal.jiraboard='open https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX'
-alias pex.stal='pex.stal.jenkins; pex.stal.pullrequests; pex.stal.jiraboard'
-alias pex.staa='sta.intellij; sta.sourcetree; sta.parallels'
+alias pex.link.jenkins='open http://mistral.pexapark.com/jenkins/'
+alias pex.link.pullrequests='open https://bitbucket.org/fmupexapark/pexapark-mvp/pull-requests/'
+alias pex.link.jiraboard='open https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX'
+alias pex.link='pex.link.jenkins; pex.link.pullrequests; pex.link.jiraboard'
+alias pex.app='pex.cd; app.intellij; app.sourcetree; app.parallels'
 alias pex.cd='cd /Users/ttardy/Projects/pexapark/pexapark-mvp'
 
 # mp alias for Evalueserve
-alias isb.stal.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-customer/'
-alias ibb.stal.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-khive/'
-alias isb.stal.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-customer/pull-requests'
-alias ibb.stal.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-khive/pull-requests'
-alias isb.stal.jiraopeninrelease='open https://services.mptechnology.ch/jira/issues/?filter=12406'
-alias isb.stal.jiraboard='open https://services.mptechnology.ch/jira/secure/RapidBoard.jspa?rapidView=21'
-alias isb.stal='isb.stal.jenkins; ibb.stal.jenkins; isb.stal.pullrequests; ibb.stal.pullrequests; isb.stal.jiraopeninrelease; isb.stal.jiraboard'
-alias isb.staa='sta.intellij; sta.sourcetree; sta.parallels'
+alias isb.link.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-customer/'
+alias ibb.link.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-khive/'
+alias isb.link.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-customer/pull-requests'
+alias ibb.link.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-khive/pull-requests'
+alias isb.link.jiraopeninrelease='open https://services.mptechnology.ch/jira/issues/?filter=12406'
+alias isb.link.jiraboard='open https://services.mptechnology.ch/jira/secure/RapidBoard.jspa?rapidView=21'
+alias isb.link='isb.link.jenkins; ibb.link.jenkins; isb.link.pullrequests; ibb.link.pullrequests; isb.link.jiraopeninrelease; isb.link.jiraboard'
+alias isb.app='isb.cd; app.intellij; app.sourcetree; app.parallels'
 alias isb.cd='cd /Users/ttardy/Projects/insightbee/isb-customer'
 
 # private aliases
