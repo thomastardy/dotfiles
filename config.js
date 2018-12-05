@@ -97,7 +97,9 @@ module.exports = {
     'sublime-text',
     'viscosity',
     'vnc-viewer',
-    'whatsapp'
+    'whatsapp',
+    'aerial',
+    'adoptopenjdk'
   ],
   gem: [
   ],
