@@ -99,7 +99,9 @@ module.exports = {
     'vnc-viewer',
     'whatsapp',
     'aerial',
-    'adoptopenjdk'
+    'adoptopenjdk',
+    'virtualbox',
+    'minikube'
   ],
   gem: [
   ],
