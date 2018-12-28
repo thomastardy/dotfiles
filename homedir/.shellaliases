@@ -95,7 +95,7 @@ alias reload="exec $SHELL -l"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 # alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; mas upgrade; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cask outdated | xargs brew cask reinstall; brew cleanup -s; npm install npm -g; npm update -g; yarn global upgrade'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cask outdated | xargs brew cask reinstall; brew cleanup -s; nvm install --lts; npm.outdated.globals; npm install npm -g; npm update -g; yarn global upgrade'
 
 alias vtop="vtop --theme wizard"
 
@@ -142,7 +142,7 @@ alias sys.prefs='open "x-apple.systempreferences:"'
 alias link.timetrack='open http://hengst.mptechnology.com/timetrack/app'
 alias link.wiki='open https://wiki.mptechnology.ch/display/MPT'
 alias mp.link='link.timetrack'
-alias mp.app='open -a /Applications/Agenda.app; open -a /Applications/Microsoft\ Outloook.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/ForkLift.app; mp.mount.hengst.sysadmin; backup.speedup'
+alias mp.app='open -a /Applications/Agenda.app; open -a /Applications/Microsoft\ Outloook.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/ChronoSync\ Express.app; mp.mount.hengst.sysadmin; backup.speedup'
 alias mp.mount.hengst.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/sysadmin"'"'"''
 alias mp.mount.hengst.mptechnology.com.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst.mptechnology.com/sysadmin"'"'"''
 alias mp.dyndns='~/Scripts/dyn.sh'
