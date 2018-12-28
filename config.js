@@ -79,7 +79,7 @@ module.exports = {
     'vlc',
     // 'xquartz',
     '3xcphone',
-    // 'alfred',
+    'alfred',
     'appcleaner',
     'fantastical',
     'intel-power-gadget',
