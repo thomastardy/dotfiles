@@ -15,15 +15,8 @@ export PATH=/usr/local/bin:$PATH
 # The next line enables shell command completion for gcloud.
 #source "/Users/$(whoami)/Downloads/google-cloud-sdk/completion.zsh.inc"
 
-# NPM
-# TODO tardy needed?
-# export PATH=$PATH:/usr/local/share/npm/bin
-
-# TODO tardy needed?
-# export PATH=$PATH:~/.nvm/v0.10.22/bin
-
-# TODO tardy needed?
-# export PATH=${PATH}:/usr/local/opt/gettext/bin
+# gcloud
+export PATH=$PATH:/Users/ttardy/Tools/google-cloud-sdk/bin
 
 # TODO tardy needed?
 # export PATH="$PATH:`yarn global bin`"

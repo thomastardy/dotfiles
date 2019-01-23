@@ -30,7 +30,7 @@ export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.dotfiles/oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colorize compleat dirpersist autojump git history cp docker docker-compose mvn npm osx screen yarn kubectl)
+plugins=(colorize compleat dirpersist autojump git history cp docker docker-compose mvn npm osx screen yarn kubectl helm)
 
 source $ZSH/oh-my-zsh.sh
 

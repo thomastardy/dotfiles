@@ -173,8 +173,9 @@ alias pex.link.pullrequests='open https://bitbucket.org/fmupexapark/pexapark-mvp
 alias pex.link.jiraboard='open https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX'
 alias pex.link='pex.link.jenkins; pex.link.pullrequests; pex.link.jiraboard'
 alias pex.app='pex.cd.new; app.intellij; app.parallels'
-alias pex.cd='cd /Users/ttardy/Projects/pexapark/pexapark-mvp'
-alias pex.cd.new='open /Users/ttardy/Projects/pexapark/pexapark-mvp -a iterm'
+alias pex.cd='cd /Users/ttardy/Projects/pexapark'
+alias pex.cd.new='open /Users/ttardy/Projects/pexapark -a iterm'
+alias pex.start='mp.vpn; mp.app; mp.link; pex.cd.new'
 
 # mp alias for Evalueserve
 alias isb.link.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-customer/'
