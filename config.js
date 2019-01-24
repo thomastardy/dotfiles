@@ -80,7 +80,6 @@ module.exports = {
     // 'xquartz',
     '3xcphone',
     'alfred',
-    'LaunchBar',
     'appcleaner',
     'fantastical',
     'intel-power-gadget',
