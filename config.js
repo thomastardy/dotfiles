@@ -101,7 +101,8 @@ module.exports = {
     'aerial',
     'adoptopenjdk',
     'virtualbox',
-    'minikube'
+    'minikube',
+    'postman'
   ],
   gem: [
   ],
