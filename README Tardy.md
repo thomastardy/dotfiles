@@ -1,3 +1,9 @@
+Check upstream for changes
+* https://github.com/thomastardy/dotfiles/compare/master...atomantic:master
+* git fetch upstream
+* git pull upstream master
+
+Initial Installation:
 * Reformat Disk using APFS (Encrypted)
 * Manually install Applications
    * 1Password
