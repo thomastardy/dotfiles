@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/homedir/.vim/bundle/Vundle.vim" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oh-my-zsh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oh-my-zsh/custom/themes/powerlevel9k" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/z-zsh" vcs="Git" />
+  </component>
+</project>
