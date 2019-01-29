@@ -3,6 +3,8 @@ module.exports = {
     // http://conqueringthecommandline.com/book/ack_ag
     // TODO tardy check if required 'ack',
     // TODO tardy check if required 'ag',
+    // alternative to `cat`: https://github.com/sharkdp/bat
+    // TODO tardy check if required 'bat',
     // Install GNU core utilities (those that come with macOS are outdated)
     // Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
     'coreutils',
@@ -10,6 +12,7 @@ module.exports = {
     // Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
     'findutils',
     // 'fortune',
+    'fzf',
     // todo-txt check if required 'readline', // ensure gawk gets good readline
     // TODO tardy check if required 'gawk',
     // http://www.lcdf.org/gifsicle/ (because I'm a gif junky)
@@ -18,6 +21,8 @@ module.exports = {
     // Install GNU `sed`, overwriting the built-in `sed`
     // so we can do "sed -i 's/foo/bar/' file" instead of "sed -i '' 's/foo/bar/' file"
     // TODO tardy check if required 'gnu-sed --with-default-names',
+    // upgrade grep so we can get things like inverted match (-v)
+    'grep --with-default-names',
     // better, more recent grep
     'homebrew/dupes/grep',
     // https://github.com/jkbrzt/httpie
