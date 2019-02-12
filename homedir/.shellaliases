@@ -132,8 +132,8 @@ alias docker.cleanup.volumes='docker run -v /var/run/docker.sock:/var/run/docker
 alias npm.outdated.globals='npm outdated -g --depth=0'
 
 # usefull aliases
-alias reboot='cd; clear; osascript -e '"'"'tell application "System Events" to restart'"'"''
-alias shutdown='cd; clear; osascript -e '"'"'tell application "System Events" to shut down'"'"''
+# alias reboot='cd; clear; osascript -e '"'"'tell application "System Events" to restart'"'"''
+# alias shutdown='cd; clear; osascript -e '"'"'tell application "System Events" to shut down'"'"''
 alias dotfiles.edit='subl /Users/ttardy/.dotfiles'
 alias dotfiles.cd='cd /Users/ttardy/.dotfiles'
 alias sys.prefs='open "x-apple.systempreferences:"'
