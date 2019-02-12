@@ -166,7 +166,6 @@ alias say.app='say.cd.new; app.intellij; app.parallels'
 alias say.start='mp.app; mp.link; say.app; say.link'
 alias say.cd='cd /Users/ttardy/Projects/sayano/sayano-app'
 alias say.cd.new='open /Users/ttardy/Projects/sayano/sayano-app -a iterm'
-alias say.mt='open "mailto:jan.hedding@sayano.ch,reto.frei@sayano.ch,jeannine.wirz@sayano.ch,donat.grimm@metagon.ch?cc=sayanoteam@mptechnology.ch&amp&subject=SAYANO%20App%20Release%20%3CVERSION%3E%20auf%20INT%20installiert&amp&body=Guten%20Tag%0A%0AWir%20haben%20soeben%20den%20Release%20%3CVERSION%3E%20der%20SAYANO%20App%20auf%20der%20Integrationsumgebung%20installiert.%0Ahttps%3A%2F%2Fint-app.sayano.ch%0A%0AWir%20bitten%20Sie%20alle%20Tickets%20im%20Status%20'Integration%20Testing'%20zu%20verifizieren%20und%20entweder%20zur%C3%BCckzuweisen%20oder%20zu%20akzeptieren.%0AWenn%20Sie%20sich%20bei%20JIRA%20anmelden%2C%20finden%20Sie%20die%20Liste%20der%20zu%20testenden%20Tickets%20unter%3A%20https%3A%2F%2Fjira.mptechnology.ch%2Fissues%2F%3Ffilter%3D12873%0A%0ABei%20Fragen%20stehen%20wir%20Ihnen%20gerne%20zur%20Verf%C3%BCgung.%0A%0AFreundliche%20Gr%C3%BCsse%0AThomas%20Tardy"'
 
 # mp aliases for Pexapark
 alias pex.link.jenkins='open "http://mistral.pexapark.com/jenkins/"'
@@ -174,7 +173,8 @@ alias pex.link.wiki='open "https://pexapark.atlassian.net/wiki/spaces/PM/overvie
 alias pex.link.pullrequests.monitor='open "https://bitbucket.org/fmupexapark/pexapark-mvp/pull-requests/"'
 alias pex.link.pullrequests.connect-ui='open "https://bitbucket.org/fmupexapark/pexaconnect-app-customer-ui/pull-requests/"'
 alias pex.link.pullrequests.connect-backend='open "https://bitbucket.org/fmupexapark/pexaconnect-app-backend/pull-requests/"'
-alias pex.link.jiraboard='open "https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX"'
+alias pex.link.jiraboard='open "https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=6"'
+# alias pex.link.jiraboard='open "https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX"'
 alias pex.link='pex.link.jenkins; pex.link.wiki; pex.link.pullrequests.monitor; pex.link.pullrequests.connect-ui; pex.link.pullrequests.connect-backend; pex.link.jiraboard'
 alias pex.app='pex.cd.new; app.intellij; app.docker'
 alias pex.cd='cd /Users/ttardy/Projects/pexapark'
