@@ -178,7 +178,7 @@
   clean = expand -t 4
 
 [push]
-  default = matching
+	default = current
 	followTags = true
 
 [filter "media"]
