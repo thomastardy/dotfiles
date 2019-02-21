@@ -13,7 +13,7 @@ module.exports = {
     'findutils',
     // 'fortune',
     'fzf',
-    // todo-txt check if required 'readline', // ensure gawk gets good readline
+    // TODO tardy check if required 'readline', // ensure gawk gets good readline
     // TODO tardy check if required 'gawk',
     // http://www.lcdf.org/gifsicle/ (because I'm a gif junky)
     // TODO tardy check if required 'gifsicle',
