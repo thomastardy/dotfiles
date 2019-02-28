@@ -28,7 +28,7 @@ alias dns.flush='dscacheutil -flushcache'
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
 # Finally, clear download history from quarantine. https://mths.be/bum
-alias trash.empty="sudo rm -rfv /Volumes/\*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/\*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+alias trash.empty="sudo rm -rfv /Volumes/\*/.Trashes/*; sudo rm -rfv ~/.Trash/*; sudo rm -rfv /private/var/log/asl/\*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
 
 # Files being opened
 alias files.open='sudo fs_usage -e -f filesystem|grep -v CACHE_HIT|grep -v grep|grep open'
@@ -145,6 +145,7 @@ alias mp.link='link.timetrack'
 alias mp.app='open -a /Applications/Bear.app; open -a /Applications/Mail.app; open -a /Applications/Fantastical\ 2.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/ForkLift.app; mp.mount.hengst.sysadmin; backup.speedup'
 alias mp.mount.hengst.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/sysadmin"'"'"''
 alias mp.mount.hengst.mptechnology.com.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst.mptechnology.com/sysadmin"'"'"''
+alias mp.start='mp.app; mp.link'
 alias mp.dyndns='~/Scripts/dyn.sh'
 alias mp.vpn='mp.dyndns && app.viscosity'
 alias app.viscosity='open -a /Applications/Viscosity.app'
@@ -177,8 +178,9 @@ alias pexa.link.jiraboard='open "https://pexapark.atlassian.net/secure/RapidBoar
 # alias pexa.link.jiraboard='open "https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX"'
 alias pexa.link='pexa.link.jenkins; pexa.link.wiki; pexa.link.pullrequests.monitor; pexa.link.pullrequests.connect-ui; pexa.link.pullrequests.connect-backend; pexa.link.jiraboard'
 alias pexa.app='pexa.cd.new; app.intellij; app.docker'
-alias pexa.cd='cd /Users/ttardy/Projects/pexapark'
-alias pexa.cd.new='open /Users/ttardy/Projects/pexapark -a iterm'
+alias pexa.cd='cd /Users/ttardy/Projects/pexapark/pexaconnect-app-backend'
+alias pexa.cd.new='open /Users/ttardy/Projects/pexapark/pexaconnect-app-backend -a iterm'
+alias pexa.cd.pc.cui='open /Users/ttardy/Projects/pexapark/pexaconnect-app-customer-ui -a iterm'
 alias pexa.start='mp.app; mp.link; pexa.app; pexa.link'
 
 # mp alias for Evalueserve

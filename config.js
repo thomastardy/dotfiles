@@ -85,7 +85,6 @@ module.exports = {
     // 'xquartz',
     '3xcphone',
     'alfred',
-    'appcleaner',
     'fantastical',
     'intel-power-gadget',
     'intellij-idea',
@@ -107,7 +106,10 @@ module.exports = {
     'adoptopenjdk',
     'virtualbox',
     'minikube',
-    'postman'
+    'postman',
+    'handbreak',
+    'popclip',
+    'yt-music'
   ],
   gem: [
   ],
