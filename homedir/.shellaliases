@@ -113,7 +113,7 @@ alias apache.stop="sudo apachectl stop"
 alias apache.restart="sudo apachectl restart"
 
 # Git cleanup commands
-alias git.cleanup='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | grep -v release | xargs -n 1 git branch -d'
+alias git.cleanup='git branch --merged | grep -v "\*" | grep -vw master | grep -vw dev | grep -v release | xargs -n 1 git branch -d'
 
 # Backup
 alias backup.speedup="sudo sysctl debug.lowpri_throttle_enabled=0"
@@ -155,6 +155,7 @@ alias app.parallels='open -a /Applications/Parallels\ Desktop.app'
 alias app.postgres='open -a /Applications/Postgres.app'
 alias app.ytmusic='open -a /Applications/YT\ Music.app'
 alias app.docker='open -a /Applications/Docker.app'
+alias app.dash='open -a /Applications/Dash.app'
 
 # mp aliases for SAYANO
 alias say.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/sayano/"'
@@ -163,7 +164,7 @@ alias say.link.wiki='open "https://wiki.mptechnology.ch/display/MPT/SAYANO"'
 alias say.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=12874"'
 alias say.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=37"'
 alias say.link='say.link.jenkins; say.link.pullrequests; say.link.wiki; say.link.jiraopeninrelease; say.link.jiraboard'
-alias say.app='say.cd.new; app.intellij; app.parallels'
+alias say.app='say.cd.new; app.intellij; app.parallels; app.dash'
 alias say.start='mp.app; mp.link; say.app; say.link'
 alias say.cd='cd /Users/ttardy/Projects/sayano/sayano-app'
 alias say.cd.new='open /Users/ttardy/Projects/sayano/sayano-app -a iterm'
@@ -177,10 +178,10 @@ alias pexa.link.pullrequests.connect-backend='open "https://bitbucket.org/fmupex
 alias pexa.link.jiraboard='open "https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=6"'
 # alias pexa.link.jiraboard='open "https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX"'
 alias pexa.link='pexa.link.jenkins; pexa.link.wiki; pexa.link.pullrequests.monitor; pexa.link.pullrequests.connect-ui; pexa.link.pullrequests.connect-backend; pexa.link.jiraboard'
-alias pexa.app='pexa.cd.new; app.intellij; app.docker'
+alias pexa.app='pexa.cd.new; app.intellij; app.docker; app.dash'
 alias pexa.cd='cd /Users/ttardy/Projects/pexapark/pexaconnect-app-backend'
 alias pexa.cd.new='open /Users/ttardy/Projects/pexapark/pexaconnect-app-backend -a iterm'
-alias pexa.cd.pc.cui='open /Users/ttardy/Projects/pexapark/pexaconnect-app-customer-ui -a iterm'
+alias pexa.cd.pc.cui.new='open /Users/ttardy/Projects/pexapark/pexaconnect-app-customer-ui -a iterm'
 alias pexa.start='mp.app; mp.link; pexa.app; pexa.link'
 
 # mp alias for Evalueserve
