@@ -1,8 +1,4 @@
-.DS_Store
-.AppleDouble
-.LSOverride
-# Thumbnails
-._*
+# build output
 id_rsa
 node_modules
 homedir/.m2/repository
@@ -15,3 +11,39 @@ homedir/.vim/.netrwhist
 homedir/.vim/bundle/*
 !homedir/.vim/bundle/.gitignore
 !homedir/.vim/bundle/Vundle.vim
+
+# log
+*.log
+/logs/
+
+# db backups
+*.bak
+
+# intellij config files
+/*.iml
+/.idea/libraries/
+/.idea/sonarIssues.xml
+/.idea/workspace.xml
+/.idea/dictionaries/tardy.xml
+/.idea/jsLibraryMappings.xml
+/.idea/uiDesigner.xml
+/.idea/dataSources.*
+/.idea/dataSources/*
+/.idea/artifacts
+/.idea/shelf
+/.idea/jsLinters/eslint.xml
+/.idea/compiler.xml
+/.idea/sonarlint
+
+# misc
+.merge_file*
+/src/main/resources/rebel.xml
+.tern-project
+.externalToolBuilders
+.DocumentRevisions-V100
+.fseventsd
+/html-angular-validate-report-checkstyle.xml
+/html-angular-validate-report.json
+
+# test results
+/testresults/*
