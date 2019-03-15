@@ -88,7 +88,7 @@ module.exports = {
     'fantastical',
     'intel-power-gadget',
     'intellij-idea',
-    'keepassxc',
+    'macpass',
     'keepingyouawake',
     // 'homebrew/cask-drivers/logitech-gaming-software',
     'parallels',
