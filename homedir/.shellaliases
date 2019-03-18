@@ -179,9 +179,12 @@ alias pexa.link.jiraboard='open "https://pexapark.atlassian.net/secure/RapidBoar
 # alias pexa.link.jiraboard='open "https://pexapark.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=PEX"'
 alias pexa.link='pexa.link.jenkins; pexa.link.wiki; pexa.link.pullrequests.connect-ui; pexa.link.pullrequests.connect-backend; pexa.link.jiraboard'
 alias pexa.app='pexa.cd.new; app.intellij; app.docker'
-alias pexa.cd='cd /Users/ttardy/Projects/pexapark/pexaconnect-app-backend'
-alias pexa.cd.new='open /Users/ttardy/Projects/pexapark/pexaconnect-app-backend -a iterm'
+alias pexa.cd='cd /Users/ttardy/Projects/pexapark'
+alias pexa.cd.new='open /Users/ttardy/Projects/pexapark -a iterm'
+alias pexa.cd.pc.back.new='open /Users/ttardy/Projects/pexapark/pexaconnect-app-backend -a iterm'
 alias pexa.cd.pc.cui.new='open /Users/ttardy/Projects/pexapark/pexaconnect-app-customer-ui -a iterm'
+alias pexa.cd.pc.pqmi.new='open /Users/ttardy/Projects/pexapark/pexacquant-montel-importer -a iterm'
+alias pexa.cd.pc.pqmipoc.new='open /Users/ttardy/Projects/pexapark/pexacquant-montel-importer-poc -a iterm'
 alias pexa.start='mp.app; mp.link; pexa.app; pexa.link'
 
 # mp alias for Evalueserve
