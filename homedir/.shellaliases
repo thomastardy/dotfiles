@@ -164,7 +164,7 @@ alias say.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?fil
 alias say.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=37"'
 alias say.link='say.link.jenkins; say.link.pullrequests; say.link.wiki; say.link.jiraopeninrelease; say.link.jiraboard'
 alias say.app='say.cd.new; app.intellij; app.parallels'
-alias say.start='mp.app; mp.link; say.app; say.link'
+alias say.start='say.app; say.link'
 alias say.cd='cd /Users/ttardy/Projects/sayano/sayano-app'
 alias say.cd.new='open /Users/ttardy/Projects/sayano/sayano-app -a iterm'
 
@@ -182,9 +182,9 @@ alias pexa.cd='cd /Users/ttardy/Projects/pexapark'
 alias pexa.cd.new='open /Users/ttardy/Projects/pexapark -a iterm'
 alias pexa.cd.pc.back.new='open /Users/ttardy/Projects/pexapark/pexaconnect-app-backend -a iterm'
 alias pexa.cd.pc.cui.new='open /Users/ttardy/Projects/pexapark/pexaconnect-app-customer-ui -a iterm'
-alias pexa.cd.pc.pqmi.new='open /Users/ttardy/Projects/pexapark/pexacquant-montel-importer -a iterm'
-alias pexa.cd.pc.pqmipoc.new='open /Users/ttardy/Projects/pexapark/pexacquant-montel-importer-poc -a iterm'
-alias pexa.start='mp.app; mp.link; pexa.app; pexa.link'
+alias pexa.cd.pq.mi.new='open /Users/ttardy/Projects/pexapark/pexaquant-montel-importer -a iterm'
+alias pexa.cd.pq.mipoc.new='open /Users/ttardy/Projects/pexapark/pexaquant-montel-importer-poc -a iterm'
+alias pexa.start='pexa.app; pexa.link'
 
 # mp alias for Evalueserve
 alias isb.link.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-customer/'
