@@ -139,6 +139,7 @@
   configpushnothing = config push.default nothing
   configpushmatching = config push.default matching
   configpushcurrent = config push.default current
+  configpushsimple = config push.default simple
 
 [apply]
   whitespace = nowarn
@@ -179,6 +180,7 @@
 
 [push]
 	followTags = true
+	default = simple
 
 [filter "media"]
   required = true

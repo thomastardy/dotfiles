@@ -31,3 +31,8 @@ export JAVA_HOME=`/usr/libexec/java_home`
 #########################################################################
 export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
 export NVM_DIR=~/.nvm
+
+#########################################################################
+# Docker Compose
+#########################################################################
+export COMPOSE_IGNORE_ORPHANS=true
