@@ -199,3 +199,5 @@
 	trustExitCode = true
 [commit]
 	template = /Users/ttardy/.stCommitMsg
+[pull]
+	rebase = true
