@@ -111,8 +111,10 @@ alias apache.start="sudo apachectl start"
 alias apache.stop="sudo apachectl stop"
 alias apache.restart="sudo apachectl restart"
 
-# Git cleanup commands
-alias git.cleanup='git branch --merged | grep -v "\*" | grep -vw master | grep -vw develop | grep -v release | xargs -n 1 git branch -d'
+# Git commands
+#alias git.cleanup='git branch --merged | grep -v "\*" | grep -vw master | grep -vw develop | grep -v release | xargs -n 1 git branch -d'
+alias git.cleanup='git remote prune origin && git branch -vv | grep "origin/.*: gone]" | awk "{print $1}" | xargs git branch -d'
+alias git.checkout='git fetch && git checkout '
 
 # Backup
 alias backup.speedup="sudo sysctl debug.lowpri_throttle_enabled=0"
