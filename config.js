@@ -104,6 +104,7 @@ module.exports = {
     'whatsapp',
     'aerial',
     'adoptopenjdk',
+    'adoptopenjdk11',
     'virtualbox',
     'minikube',
     'postman',
