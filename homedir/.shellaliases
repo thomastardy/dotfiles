@@ -94,7 +94,7 @@ alias reload="exec $SHELL -l"
 # alias spoton="sudo mdutil -a -i on"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cask outdated | xargs brew cask reinstall; brew cleanup -s; npm list -g --depth=0; nvm ls-remote --lts; nvm install --lts; nvm install-latest-npm; npm i -g npm-check-updates; npm uninstall -g angular-cli; npm cache verify; npm install -g @angular/cli@latest; npm list -g --depth=0; ncu -g'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cask outdated | xargs brew cask reinstall; brew cleanup -s; nvm ls-remote --lts; npm list -g --depth=0; nvm install --lts; nvm install-latest-npm; npm i -g npm-check-updates; npm list -g --depth=0; ncu -g'
 
 alias vtop="vtop --theme wizard"
 
