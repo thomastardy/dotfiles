@@ -158,6 +158,18 @@ alias app.postgres='open -a /Applications/Postgres.app'
 alias app.ytmusic='open -a /Applications/YT\ Music.app'
 alias app.docker='open -a /Applications/Docker.app'
 
+# mp aliases for Eberhard eLS
+alias els.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/Eberhard%20eLS/"'
+alias els.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-els/pull-requests"'
+alias els.link.wiki='open "https://wiki.mptechnology.ch/display/MPT/eLS+-+Elektronischer+Lieferschein"'
+alias els.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=13782"'
+alias els.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=45"'
+alias els.link='els.link.jenkins; els.link.pullrequests; els.link.wiki; els.link.jiraopeninrelease; els.link.jiraboard'
+alias els.app='els.cd.new; app.docker; app.intellij'
+alias els.start='els.app; els.link'
+alias els.cd='cd /Users/ttardy/Projects/eberhard/eberhard-els'
+alias els.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-els -a iterm'
+
 # mp aliases for SAYANO
 alias say.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/sayano/"'
 alias say.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/SAY/repos/sayano-app/pull-requests"'
