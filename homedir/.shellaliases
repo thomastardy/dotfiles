@@ -187,7 +187,7 @@ alias apg.cd='cd /Users/ttardy/Projects/apg/apg-sso'
 alias apg.cd.new='open /Users/ttardy/Projects/apg/apg-sso -a iterm'
 
 # mp aliases for Eberhard eLSA
-alias elsa.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/Eberhard%20eLSA/"'
+alias elsa.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/Eberhard/"'
 alias elsa.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-elsa/pull-requests"'
 alias elsa.link.wiki='open "https://wiki.mptechnology.ch/display/EB/eLSA"'
 alias elsa.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=13782"'
