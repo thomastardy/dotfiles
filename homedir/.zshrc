@@ -30,11 +30,14 @@ export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.dotfiles/oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colorize compleat dirpersist autojump git gulp history cp docker docker-compose mvn npm osx screen kubectl helm ng)
+plugins=(colorize compleat dirpersist git gulp history cp docker docker-compose mvn npm osx screen kubectl helm ng)
+
+ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/local/opt/nvm/nvm.sh --no-use
+source /opt/homebrew/opt/nvm/nvm.sh --no-use
+#source /usr/local/opt/nvm/nvm.sh --no-use
 
 autoload -U add-zsh-hook
 load-nvmrc() {

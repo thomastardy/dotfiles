@@ -223,11 +223,11 @@ RUBY_CONFIGURE_OPTS="--with-openssl-dir=`brew --prefix openssl` --with-readline-
 require_brew ruby
 # set zsh as the user login shell
 CURRENTSHELL=$(dscl . -read /Users/$USER UserShell | awk '{print $2}')
-if [[ "$CURRENTSHELL" != "/usr/local/bin/zsh" ]]; then
-  bot "setting newer homebrew zsh (/usr/local/bin/zsh) as your shell (password required)"
-  # sudo bash -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
-  # chsh -s /usr/local/bin/zsh
-  sudo dscl . -change /Users/$USER UserShell $SHELL /usr/local/bin/zsh > /dev/null 2>&1
+if [[ "$CURRENTSHELL" != "/opt/homebrew/bin/zsh" ]]; then
+  bot "setting newer homebrew zsh (/opt/homebrew/bin/zsh) as your shell (password required)"
+  # sudo bash -c 'echo "/opt/homebrew/bin/zsh" >> /etc/shells'
+  # chsh -s /opt/homebrew/bin/zsh
+  sudo dscl . -change /Users/$USER UserShell $SHELL /opt/homebrew/bin/zsh > /dev/null 2>&1
   ok
 fi
 
@@ -322,6 +322,8 @@ npm config set save-exact true
 bot "installing npm tools needed to run this project..."
 npm install
 ok
+
+brew tap AdoptOpenJDK/openjdk
 
 bot "installing packages from config.js..."
 node index.js
@@ -682,8 +684,8 @@ running "Disable press-and-hold for keys in favor of key repeat"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false;ok
 
 # running "Set a blazingly fast keyboard repeat rate"
-# defaults write NSGlobalDomain KeyRepeat -int 2
-# defaults write NSGlobalDomain InitialKeyRepeat -int 10;ok
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 10;ok
 
 running "Set language and text formats (english/US)"
 defaults write NSGlobalDomain AppleLanguages -array "en"

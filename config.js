@@ -36,7 +36,9 @@ module.exports = {
         // Install some other useful utilities like `sponge`
         // TODO tardy check if required 'moreutils',
         'nmap',
+        'netcat',
         'nvm',
+        'node',
         // TODO tardy check if required 'openconnect',
         // TODO tardy check if required 'reattach-to-user-namespace',
         // better/more recent version of screen
@@ -54,7 +56,16 @@ module.exports = {
         'netcat',
         'ssh-copy-id',
         'https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb',
-        'telnet'
+        'telnet',
+        'handbreak',
+        'ffmpeg',
+        'mkvtoolnix',
+        'mp4v2',
+        'mpv',
+        'imagemagick',
+        'jhead',
+        'gradle',
+        'postgresql@12'
         // 'yarn'
     ],
     cask: [
@@ -84,6 +95,7 @@ module.exports = {
         //'transmission',
         // 'visual-studio-code',
         'vlc',
+        'arq',
         // 'xquartz',
         'alfred',
         'fantastical',
@@ -114,7 +126,9 @@ module.exports = {
         'slack',
         'teamviewer',
         'tibco-jaspersoft-studio',
-        'typora'
+        'typora',
+        // 'bear',
+        'devonthink'
     ],
     gem: [],
     npm: [
@@ -132,12 +146,6 @@ module.exports = {
         '@angular/cli'
     ],
     mas: [
-        // GoodNotes (5.4.14)
-        '1480793815',
-        // Fantastical (3.3.4)
-        '975937182',
-        // Broadcasts (1.3.8)
-        '1469995354',
         // Keynote (10.3.9)
 //       '409183694',
         // Microsoft Remote Desktop (10.5.1)
@@ -146,20 +154,14 @@ module.exports = {
         '441258766',
         // Project Viewer 365 (20.66.1083)
         '742239147',
-        // gardenPlanner (3.7.69)
-        '942265351',
         // GoodNotes (5.6.36)
         '1444383602',
-        // Bear (1.8.2)
-        '1091189122',
         // PhotoSweeper (3.9.3)
         '463362050',
         // iMovie (10.2.2)
         // '408981434',
         // Pages (10.3.9)
         // '409201541',
-        // Pixelmator (3.9.2)
-        '407963104',
         // Xcode (12.4)
         // '497799835',
         // GarageBand (10.4.2),
