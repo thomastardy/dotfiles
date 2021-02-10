@@ -95,6 +95,7 @@ alias reload="exec $SHELL -l"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update.system='sudo softwareupdate -i -a -R'
+alias update.mas='mas upgrade'
 # brew upgrade --greedy
 alias update.brew='brew update; brew upgrade; brew cleanup -s;'
 alias update.node='nvm ls-remote --lts; npm list -g --depth=0; nvm install --lts; nvm install-latest-npm; npm i -g npm-check-updates; npm list -g --depth=0; ncu -g'
