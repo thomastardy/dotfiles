@@ -36,6 +36,7 @@ module.exports = {
         // Install some other useful utilities like `sponge`
         // TODO tardy check if required 'moreutils',
         'nmap',
+        'nvm',
         // TODO tardy check if required 'openconnect',
         // TODO tardy check if required 'reattach-to-user-namespace',
         // better/more recent version of screen
