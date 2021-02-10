@@ -1,9 +1,8 @@
+# ruby gem nightly updates
+# 0 2 * * *  gem update -V -y
 # brew nightly updates
-0 1 * * *  brew update
-0 1 15 * *  brew upgrade
-0 1 45 * *  brew cleanup -s
-0 2 * * *  brew cask outdated | xargs brew cask reinstall
+# 0 3 * * *  brew update
+# 0 4 * * *  brew upgrade
 # npm
-0 3 * * *  npm install npm -g
-# yarn
-0 4 * * *  yarn global upgrade
+# 0 5 * * *  npm update npm -g
+# 0 6 * * *  npm update -g

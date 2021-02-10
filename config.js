@@ -3,6 +3,8 @@ module.exports = {
     // http://conqueringthecommandline.com/book/ack_ag
     // TODO tardy check if required 'ack',
     // TODO tardy check if required 'ag',
+    // https://github.com/wting/autojump
+    // TODO tardy check if required 'autojump',
     // alternative to `cat`: https://github.com/sharkdp/bat
     // TODO tardy check if required 'bat',
     // Install GNU core utilities (those that come with macOS are outdated)
@@ -28,14 +30,13 @@ module.exports = {
     // https://github.com/jkbrzt/httpie
     // TODO tardy check if required 'httpie',
     // jq is a sort of JSON grep
-    // TODO tardy check if required 'jq',
+    'jq',
     // Mac App Store CLI: https://github.com/mas-cli/mas
     // TODO tardy check if required 'mas',
     // Install some other useful utilities like `sponge`
     // TODO tardy check if required 'moreutils',
     'nmap',
     // TODO tardy check if required 'openconnect',
-    'pcre',
     // TODO tardy check if required 'reattach-to-user-namespace',
     // better/more recent version of screen
     // TODO tardy check if required 'homebrew/dupes/screen',
@@ -44,7 +45,7 @@ module.exports = {
     // TODO tardy check if required 'tree',
     // TODO tardy check if required 'ttyrec',
     // better, more recent vim
-    'vim --with-override-system-vi',
+    'vim --with-client-server --with-override-system-vi',
     // TODO check if required 'watch',
     // Install wget with IRI support
     'wget --enable-iri',
@@ -83,34 +84,35 @@ module.exports = {
     // 'visual-studio-code',
     'vlc',
     // 'xquartz',
-    '3xcphone',
     'alfred',
     'fantastical',
-    'intel-power-gadget',
     'intellij-idea',
     'macpass',
+    'keepassxc',
     'keepingyouawake',
     // 'homebrew/cask-drivers/logitech-gaming-software',
     'parallels',
-    'qlcolorcode',
     'qlmarkdown',
     'qlprettypatch',
-    'qlstephen',
     'quicklook-json',
-    'sourcetree',
     'sublime-text',
     'viscosity',
     'vnc-viewer',
     'whatsapp',
-    'aerial',
     'adoptopenjdk',
     'adoptopenjdk11',
     'virtualbox',
-    'minikube',
     'postman',
     'handbreak',
-    'popclip',
-    'yt-music'
+      'dropbox',
+      'firefox',
+      'font-awesome-terminal-fonts',
+      'font-fontawesome',
+      'makemkv',
+      'slack',
+      'teamviewer',
+      'tibco-jaspersoft-studio',
+      'typora'
   ],
   gem: [
   ],
@@ -124,7 +126,7 @@ module.exports = {
     'npm-check-updates',
     // 'prettyjson',
     // 'trash',
-    'vtop'
+    // 'vtop',
     // ,'yo',
     '@angular/cli'
   ]
