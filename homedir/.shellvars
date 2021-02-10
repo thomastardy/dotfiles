@@ -1,7 +1,3 @@
-export LANG=en_US.UTF-8
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
 # Set vim as default editor (vi is the default otherwise)
 export EDITOR="vim"
 bindkey -v
@@ -10,9 +6,9 @@ bindkey -v
 # Temporary aliases useful for demos, other current projects
 #########################################################################
 export MYTEMP=~/Temp
-export MYPROJECTS=~/Projects
-export MYDOWNLOADS=~/Downloads
-export MYDOCUMENTS=~/Documents
+# export MYPROJECTS=~/Projects
+# export MYDOWNLOADS=~/Downloads
+# export MYDOCUMENTS=~/Documents
 
 #########################################################################
 # Tool paths
