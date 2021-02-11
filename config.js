@@ -129,7 +129,8 @@ module.exports = {
         'typora',
         // 'bear',
         'devonthink',
-        'mountain'
+        'mountain',
+        'app-cleaner'
     ],
     gem: [],
     npm: [
