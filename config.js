@@ -128,7 +128,8 @@ module.exports = {
         'tibco-jaspersoft-studio',
         'typora',
         // 'bear',
-        'devonthink'
+        'devonthink',
+        'mountain'
     ],
     gem: [],
     npm: [
