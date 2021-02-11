@@ -131,7 +131,8 @@ module.exports = {
         'devonthink',
         'mountain',
         'app-cleaner',
-        'microsoft-teams'
+        'microsoft-teams',
+        'google-chrome'
     ],
     gem: [],
     npm: [
