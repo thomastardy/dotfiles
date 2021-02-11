@@ -130,7 +130,8 @@ module.exports = {
         // 'bear',
         'devonthink',
         'mountain',
-        'app-cleaner'
+        'app-cleaner',
+        'microsoft-teams'
     ],
     gem: [],
     npm: [
