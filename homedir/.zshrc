@@ -36,7 +36,7 @@ ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
-source /opt/homebrew/opt/nvm/nvm.sh --no-use
+source /opt/homebrew/opt/nvm/nvm.sh
 #source /usr/local/opt/nvm/nvm.sh --no-use
 
 autoload -U add-zsh-hook
