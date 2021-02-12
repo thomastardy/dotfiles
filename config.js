@@ -132,7 +132,8 @@ module.exports = {
         'mountain',
         'app-cleaner',
         'microsoft-teams',
-        'google-chrome'
+        'google-chrome',
+        'homebrew/cask-drivers/fujitsu-scansnap-home'
     ],
     gem: [],
     npm: [
