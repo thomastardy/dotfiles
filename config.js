@@ -100,7 +100,6 @@ module.exports = {
         'alfred',
         'fantastical',
         'intellij-idea',
-        '1password',
         'macpass',
         'keepassxc',
         'keepingyouawake',
