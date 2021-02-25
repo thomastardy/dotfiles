@@ -36,8 +36,8 @@ ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/local/opt/nvm/nvm.sh --no-use
-#source /opt/homebrew/opt/nvm/nvm.sh --no-use
+source /usr/local/opt/nvm/nvm.sh
+#source /opt/homebrew/opt/nvm/nvm.sh
 
 autoload -U add-zsh-hook
 load-nvmrc() {
