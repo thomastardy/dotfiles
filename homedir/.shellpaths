@@ -3,11 +3,12 @@ export PATH=$PATH:.
 #export PATH=$PATH:~/.dotfiles/scripts
 
 #Brew
-export PATH=/opt/homebrew/sbin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
-export PATH=/opt/homebrew/Cellar/postgresql@12/12.5/bin:$PATH
+export PATH=/usr/local/Cellar/postgresql@12/12.5/bin:$PATH
+#export PATH=/opt/homebrew/sbin:$PATH
+#export PATH=/opt/homebrew/bin:$PATH
+#export PATH=/opt/homebrew/Cellar/postgresql@12/12.5/bin:$PATH
 
 # GO
 #export PATH=$PATH:/usr/local/opt/go/libexec/bin
@@ -20,4 +21,3 @@ export PATH=/opt/homebrew/Cellar/postgresql@12/12.5/bin:$PATH
 
 # gcloud
 export PATH=$PATH:/Users/ttardy/Tools/google-cloud-sdk/bin
-	
