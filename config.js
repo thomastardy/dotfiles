@@ -38,7 +38,7 @@ module.exports = {
         'nmap',
         'netcat',
         'nvm',
-        'node',
+        // 'node', use nvm
         // TODO tardy check if required 'openconnect',
         // TODO tardy check if required 'reattach-to-user-namespace',
         // better/more recent version of screen
