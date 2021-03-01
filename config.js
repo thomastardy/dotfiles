@@ -65,7 +65,7 @@ module.exports = {
         'imagemagick',
         'jhead',
         'gradle',
-        'postgresql@12'
+        'postgresql@12',
         // 'yarn'
     ],
     cask: [
@@ -132,7 +132,8 @@ module.exports = {
         'app-cleaner',
         'microsoft-teams',
         'google-chrome',
-        'homebrew/cask-drivers/fujitsu-scansnap-home'
+        'homebrew/cask-drivers/fujitsu-scansnap-home',
+        'apparition47/tap/mailtrackerblocker' // https://github.com/apparition47/MailTrackerBlocker
     ],
     gem: [],
     npm: [
