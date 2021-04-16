@@ -98,7 +98,7 @@ module.exports = {
         'arq',
         // 'xquartz',
         'alfred',
-        'fantastical',
+        // 'fantastical',
         'intellij-idea',
         'macpass',
         'keepassxc',
@@ -132,8 +132,7 @@ module.exports = {
         'app-cleaner',
         'microsoft-teams',
         'google-chrome',
-        'homebrew/cask-drivers/fujitsu-scansnap-home',
-        'apparition47/tap/mailtrackerblocker' // https://github.com/apparition47/MailTrackerBlocker
+        'homebrew/cask-drivers/fujitsu-scansnap-home'
     ],
     gem: [],
     npm: [
@@ -151,27 +150,19 @@ module.exports = {
         '@angular/cli'
     ],
     mas: [
-        // Keynote (10.3.9)
-//       '409183694',
-        // Microsoft Remote Desktop (10.5.1)
-        '1295203466',
-        // Magnet (2.5.0)
-        '441258766',
-        // Project Viewer 365 (20.66.1083)
-        '742239147',
-        // GoodNotes (5.6.36)
-        '1444383602',
-        // PhotoSweeper (3.9.3)
-        '463362050',
-        // iMovie (10.2.2)
-        // '408981434',
-        // Pages (10.3.9)
-        // '409201541',
-        // Xcode (12.4)
-        // '497799835',
-        // GarageBand (10.4.2),
-        // '682658836',
-        // Numbers (10.3.9)
-        // '409203825'
-    ],
+        '1480793815', // GoodNotes (5.4.14)
+        '975937182', // Fantastical (3.3.7)
+        '409183694', // Keynote (11.0.1)
+        '441258766', // Magnet (2.6.0)
+        '1295203466', // Microsoft Remote Desktop (10.6.1)
+        '742239147', // Project Viewer 365 (20.66.1083)
+        '942265351', // gardenPlanner (3.7.81)
+        '1444383602', // GoodNotes (5.6.52)
+        '408981434', // iMovie (10.2.3)
+        '497799835', // Xcode (12.4)
+        '463362050', // PhotoSweeper (3.9.3)
+        '409201541', // Pages (11.0)
+        '682658836', // GarageBand (10.4.3)
+        '409203825', // Numbers (11.0)
+    ]
 };
