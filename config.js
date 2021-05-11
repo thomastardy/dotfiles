@@ -163,6 +163,7 @@ module.exports = {
         '463362050', // PhotoSweeper (3.9.3)
         '409201541', // Pages (11.0)
         '682658836', // GarageBand (10.4.3)
+        '1176895641', // Spark – Email App by Readdle (2.9.22)
         '409203825', // Numbers (11.0)
     ]
 };

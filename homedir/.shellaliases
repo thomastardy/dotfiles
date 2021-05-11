@@ -9,6 +9,11 @@ alias mssql.ncat='sudo ncat --sh-exec "ncat 10.211.55.9 1433" -l 1433 --keep-ope
 # alias g=git
 
 #############################
+# Java
+alias setJDK8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`'
+alias setJDK11='export JAVA_HOME=`/usr/libexec/java_home -v 11`'
+
+#############################
 # Utilities
 
 # Lock the screen (when going AFK)
@@ -150,7 +155,7 @@ alias mp.link='link.timetrack'
 #alias mp.app.offline='open -a /Applications/Bear.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Things3.app'
 #alias mp.app.offline='open -a /Applications/Bear.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Safari.app; open -a /Applications/Slack.app; open -a /Applications/Things3.app'
 #alias mp.app.offline='open -a /Applications/Bear.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Firefox.app; open -a /Applications/Slack.app; open -a /Applications/Things3.app'
-alias mp.app.offline='open -a /Applications/Obsidian.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/GoodTask.app'
+alias mp.app.offline='open -a /Applications/Obsidian.app; open -a /Applications/Spark.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/GoodTask.app'
 # alias mp.app='mp.app.offline; mp.mount.hengst.sysadmin; mp.mount.hengst.admin; mp.mount.hengst.projects'
 #alias mp.app='mp.app.offline; open -a /Applications/Google\ Chrome.app; open -a /Applications/Mountain.app'
 alias mp.app='mp.app.offline; open -a /Applications/Mountain.app'
@@ -219,6 +224,17 @@ alias dpk.app='dpk.cd.new; app.docker; app.intellij'
 alias dpk.start='dpk.app; dpk.link'
 alias dpk.cd='cd /Users/ttardy/Projects/digital-pk'
 alias dpk.cd.new='open /Users/ttardy/Projects/digital-pk -a iterm'
+
+# mp aliases for Perils
+alias per.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/perils/"'
+alias per.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/perils/pull-requests"'
+alias per.link.wiki='open "https://wiki.mptechnology.ch/pages/viewpage.action?pageId=327900"'
+alias per.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=38&view=detail"'
+alias per.link='per.link.jenkins; per.link.pullrequests; per.link.wiki; per.link.jiraboard'
+alias per.app='per.cd.new; app.docker; app.intellij'
+alias per.start='per.app; per.link'
+alias per.cd='cd /Users/ttardy/Projects/perils/perils'
+alias per.cd.new='open /Users/ttardy/Projects/perils/perils -a iterm'
 
 # mp aliases for Pexapark
 alias pexa.link.jenkins='open "http://mistral.pexapark.com/jenkins/"'
