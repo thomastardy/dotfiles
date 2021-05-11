@@ -9,6 +9,11 @@ alias mssql.ncat='sudo ncat --sh-exec "ncat 10.211.55.9 1433" -l 1433 --keep-ope
 # alias g=git
 
 #############################
+# Java
+alias setJDK8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`'
+alias setJDK11='export JAVA_HOME=`/usr/libexec/java_home -v 11`'
+
+#############################
 # Utilities
 
 # Lock the screen (when going AFK)
@@ -150,7 +155,7 @@ alias mp.link='link.timetrack'
 #alias mp.app.offline='open -a /Applications/Bear.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Things3.app'
 #alias mp.app.offline='open -a /Applications/Bear.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Safari.app; open -a /Applications/Slack.app; open -a /Applications/Things3.app'
 #alias mp.app.offline='open -a /Applications/Bear.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Firefox.app; open -a /Applications/Slack.app; open -a /Applications/Things3.app'
-alias mp.app.offline='open -a /Applications/Obsidian.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/GoodTask.app'
+alias mp.app.offline='open -a /Applications/Obsidian.app; open -a /Applications/Spark.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/GoodTask.app'
 # alias mp.app='mp.app.offline; mp.mount.hengst.sysadmin; mp.mount.hengst.admin; mp.mount.hengst.projects'
 #alias mp.app='mp.app.offline; open -a /Applications/Google\ Chrome.app; open -a /Applications/Mountain.app'
 alias mp.app='mp.app.offline; open -a /Applications/Mountain.app'
@@ -220,6 +225,17 @@ alias dpk.start='dpk.app; dpk.link'
 alias dpk.cd='cd /Users/ttardy/Projects/digital-pk'
 alias dpk.cd.new='open /Users/ttardy/Projects/digital-pk -a iterm'
 
+# mp aliases for Perils
+alias per.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/perils/"'
+alias per.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/perils/pull-requests"'
+alias per.link.wiki='open "https://wiki.mptechnology.ch/pages/viewpage.action?pageId=327900"'
+alias per.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=38&view=detail"'
+alias per.link='per.link.jenkins; per.link.pullrequests; per.link.wiki; per.link.jiraboard'
+alias per.app='per.cd.new; app.docker; app.intellij'
+alias per.start='per.app; per.link'
+alias per.cd='cd /Users/ttardy/Projects/perils/perils'
+alias per.cd.new='open /Users/ttardy/Projects/perils/perils -a iterm'
+
 # mp aliases for Pexapark
 alias pexa.link.jenkins='open "http://mistral.pexapark.com/jenkins/"'
 alias pexa.link.wiki='open "https://pexapark.atlassian.net/wiki/spaces/PM/overview"'
@@ -255,14 +271,14 @@ alias cloatiming='osascript -e '"'"'tell application "/Applications/Setapp/Timin
 alias cloagooglesync='osascript -e '"'"'tell application "/Applications/Backup and Sync.app/Contents/MacOS/Backup and Sync" to quit'"'"''
 alias goprivate='cloatiming; cloagooglesync'
 
-# mp aliases for Eberhard eLSA
-alias wt.link.jenkins=''
-alias wt.link.pullrequests=''
-alias wt.link.wiki=''
-alias wt.link.jiraopeninrelease=''
-alias wt.link.jiraboard=''
-alias wt.link='wt.link.jenkins; wt.link.pullrequests; wt.link.wiki; wt.link.jiraopeninrelease; wt.link.jiraboard'
+# private aliases for Lunki's Würmlitaucher
 alias wt.app='wt.cd.new; app.intellij'
 alias wt.start='wt.app; wt.link'
 alias wt.cd='cd /Users/ttardy/Projects/wt/wt-site'
 alias wt.cd.new='open /Users/ttardy/Projects/wt/wt-site -a iterm'
+
+# private aliases for Landfrauen Hermetschwil-Staffeln
+alias landfrauen.app='landfrauen.cd.new; app.intellij'
+alias landfrauen.start='landfrauen.app; landfrauen.link'
+alias landfrauen.cd='cd /Users/ttardy/Projects/landfrauen/landfrauen-site'
+alias landfrauen.cd.new='open /Users/ttardy/Projects/landfrauen/landfrauen-site -a iterm'
