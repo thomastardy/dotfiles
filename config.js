@@ -132,7 +132,8 @@ module.exports = {
         'app-cleaner',
         'microsoft-teams',
         'google-chrome',
-        'homebrew/cask-drivers/fujitsu-scansnap-home'
+        'homebrew/cask-drivers/fujitsu-scansnap-home',
+        'ticktick'
     ],
     gem: [],
     npm: [

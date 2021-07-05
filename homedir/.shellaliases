@@ -155,7 +155,9 @@ alias mp.link='link.timetrack'
 #alias mp.app.offline='open -a /Applications/Bear.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Things3.app'
 #alias mp.app.offline='open -a /Applications/Bear.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Safari.app; open -a /Applications/Slack.app; open -a /Applications/Things3.app'
 #alias mp.app.offline='open -a /Applications/Bear.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Firefox.app; open -a /Applications/Slack.app; open -a /Applications/Things3.app'
-alias mp.app.offline='open -a /Applications/Obsidian.app; open -a /Applications/Spark.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/GoodTask.app'
+#alias mp.app.offline='open -a /Applications/Obsidian.app; open -a /Applications/Spark.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Slack.app; open -a /Applications/Setapp/GoodTask.app'
+#alias mp.app.offline='open -a /Applications/Obsidian.app; open -a /Applications/Spark.app; open -a /Applications/Fantastical.app; open -a /Applications/Slack.app; open -a /Applications/TickTick.app'
+alias mp.app.offline='open -a /Applications/Obsidian.app; open -a /System/Applications/Mail.app; open -a /Applications/Fantastical.app; open -a /Applications/Slack.app; open -a /Applications/TickTick.app'
 # alias mp.app='mp.app.offline; mp.mount.hengst.sysadmin; mp.mount.hengst.admin; mp.mount.hengst.projects'
 #alias mp.app='mp.app.offline; open -a /Applications/Google\ Chrome.app; open -a /Applications/Mountain.app'
 alias mp.app='mp.app.offline; open -a /Applications/Mountain.app'
@@ -225,6 +227,17 @@ alias dpk.start='dpk.app; dpk.link'
 alias dpk.cd='cd /Users/ttardy/Projects/digital-pk'
 alias dpk.cd.new='open /Users/ttardy/Projects/digital-pk -a iterm'
 
+# mp aliases for Contacts
+alias pco.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/perils/"'
+alias pco.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/contacts/pull-requests"'
+alias pco.link.wiki='open "https://wiki.mptechnology.ch/pages/viewpage.action?pageId=327900"'
+alias pco.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=38&view=detail"'
+alias pco.link='pco.link.jenkins; pco.link.pullrequests; pco.link.wiki; pco.link.jiraboard'
+alias pco.app='pco.cd.new; app.docker; app.intellij'
+alias pco.start='pco.app; pco.link'
+alias pco.cd='cd /Users/ttardy/Projects/perils/contacts'
+alias pco.cd.new='open /Users/ttardy/Projects/perils/contacts -a iterm'
+
 # mp aliases for Perils
 alias per.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/perils/"'
 alias per.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/perils/pull-requests"'
@@ -235,6 +248,18 @@ alias per.app='per.cd.new; app.docker; app.intellij'
 alias per.start='per.app; per.link'
 alias per.cd='cd /Users/ttardy/Projects/perils/perils'
 alias per.cd.new='open /Users/ttardy/Projects/perils/perils -a iterm'
+
+# mp aliases for Loss Forecast
+alias plf.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/perils/"'
+alias plf.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/lossforecast/pull-requests"'
+alias plf.link.wiki='open "https://wiki.mptechnology.ch/pages/viewpage.action?pageId=53380161"'
+alias plf.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=16370"'
+alias plf.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=34"'
+alias plf.link='plf.link.jenkins; plf.link.pullrequests; plf.link.wiki; plf.link.jiraopeninrelease; plf.link.jiraboard'
+alias plf.app='plf.cd.new; app.docker; app.intellij'
+alias plf.start='plf.app; plf.link'
+alias plf.cd='cd /Users/ttardy/Projects/perils/lossforecast'
+alias plf.cd.new='open /Users/ttardy/Projects/perils/lossforecast -a iterm'
 
 # mp aliases for Pexapark
 alias pexa.link.jenkins='open "http://mistral.pexapark.com/jenkins/"'
@@ -272,13 +297,19 @@ alias cloagooglesync='osascript -e '"'"'tell application "/Applications/Backup a
 alias goprivate='cloatiming; cloagooglesync'
 
 # private aliases for Lunki's Würmlitaucher
+alias wt.link.github='open https://github.com/thomastardy/wt-site'
+alias wt.link='wt.link.github'
 alias wt.app='wt.cd.new; app.intellij'
 alias wt.start='wt.app; wt.link'
 alias wt.cd='cd /Users/ttardy/Projects/wt/wt-site'
 alias wt.cd.new='open /Users/ttardy/Projects/wt/wt-site -a iterm'
 
 # private aliases for Landfrauen Hermetschwil-Staffeln
-alias landfrauen.app='landfrauen.cd.new; app.intellij'
+alias landfrauen.link.hetzner='open https://console.hetzner.cloud/projects/660897/servers'
+alias landfrauen.link.github='open https://github.com/thomastardy/landfrauen-site'
+alias landfrauen.link.graphcms='open https://app.graphcms.com/5af3c04092e6438697508596b1af82a5/master'
+alias landfrauen.link='landfrauen.link.hetzner; landfrauen.link.github; landfrauen.link.graphcms'
+alias landfrauen.app='landfrauen.cd.new; app.docker; app.intellij'
 alias landfrauen.start='landfrauen.app; landfrauen.link'
 alias landfrauen.cd='cd /Users/ttardy/Projects/landfrauen/landfrauen-site'
 alias landfrauen.cd.new='open /Users/ttardy/Projects/landfrauen/landfrauen-site -a iterm'
