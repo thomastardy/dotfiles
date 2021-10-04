@@ -38,7 +38,9 @@ export COMPOSE_IGNORE_ORPHANS=true
 # Maven
 #########################################################################
 #export MAVEN_OPTS=-Xmx2024m
-#export MAVEN_OPTS=-Xmx4096m
-export MAVEN_OPTS=-Xmx8192m
+export MAVEN_OPTS=-Xmx4096m
 
-
+#########################################################################
+# Aspectra
+#########################################################################
+export ASPECTRA_USERNAME=mptthta

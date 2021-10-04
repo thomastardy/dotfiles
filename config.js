@@ -125,15 +125,13 @@ module.exports = {
         'slack',
         'teamviewer',
         'tibco-jaspersoft-studio',
-        'typora',
         // 'bear',
         'devonthink',
         'mountain',
         'app-cleaner',
         'microsoft-teams',
         'google-chrome',
-        'homebrew/cask-drivers/fujitsu-scansnap-home',
-        'ticktick'
+        'homebrew/cask-drivers/fujitsu-scansnap-home'
     ],
     gem: [],
     npm: [
