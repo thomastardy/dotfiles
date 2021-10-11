@@ -39,6 +39,7 @@ export COMPOSE_IGNORE_ORPHANS=true
 #########################################################################
 #export MAVEN_OPTS=-Xmx2024m
 export MAVEN_OPTS=-Xmx4096m
+export MVND_HOME=/usr/local/Cellar/mvnd/0.6.0
 
 #########################################################################
 # Aspectra

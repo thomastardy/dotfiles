@@ -41,6 +41,8 @@ source /usr/local/opt/nvm/etc/bash_completion.d/nvm
 #source /opt/homebrew/opt/nvm/nvm.sh
 #source /opt/homebrew/opt/nvm/etc/bash_completion.d/nvm
 
+
+
 autoload -U add-zsh-hook
 load-nvmrc() {
   if [[ -f .nvmrc && -r .nvmrc ]]; then
@@ -58,3 +60,4 @@ unsetopt correct
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
+unalias mvnd
