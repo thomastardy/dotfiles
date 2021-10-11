@@ -155,6 +155,7 @@
   tool = vimdiff
 
 [init]
+	defaultBranch = master
   # templatedir = ~/.dotfiles/.git_template
 
 [mergetool]
