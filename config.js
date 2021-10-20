@@ -117,7 +117,7 @@ module.exports = {
         'virtualbox',
         'postman',
         'handbreak',
-        'dropbox',
+        'maestral',
         'firefox',
         'font-awesome-terminal-fonts',
         'font-fontawesome',
