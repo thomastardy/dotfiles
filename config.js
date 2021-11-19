@@ -128,7 +128,6 @@ module.exports = {
         // 'bear',
         'devonthink',
         'mountain',
-        'app-cleaner',
         'microsoft-teams',
         'google-chrome',
         'homebrew/cask-drivers/fujitsu-scansnap-home'

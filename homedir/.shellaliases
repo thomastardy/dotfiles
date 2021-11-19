@@ -12,6 +12,7 @@ alias mssql.ncat='sudo ncat --sh-exec "ncat 10.211.55.9 1433" -l 1433 --keep-ope
 # Java
 alias setJDK8='export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`'
 alias setJDK11='export JAVA_HOME=`/usr/libexec/java_home -v 11`'
+alias setJDK17='export JAVA_HOME=`/usr/libexec/java_home -v 17`'
 
 #############################
 # Utilities
@@ -103,7 +104,7 @@ alias update.system='sudo softwareupdate -i -a -R'
 alias update.mas='mas upgrade'
 # brew upgrade --greedy
 alias update.brew='brew update; brew upgrade; brew cleanup -s;'
-alias update.node='nvm ls-remote --lts; npm list -g --depth=0; nvm install --lts --reinstall-packages-from=current; nvm install-latest-npm; npm i -g npm-check-updates; npm list -g --depth=0; ncu -g'
+alias update.node='nvm ls-remote --lts; npm list -g --depth=0; nvm install --lts --reinstall-packages-from=current --latest-npm; npm i -g npm-check-updates; npm list -g --depth=0; ncu -g'
 
 alias vtop="vtop --theme wizard"
 
