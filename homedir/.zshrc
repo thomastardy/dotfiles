@@ -36,12 +36,10 @@ ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/local/opt/nvm/nvm.sh
-source /usr/local/opt/nvm/etc/bash_completion.d/nvm
-#source /opt/homebrew/opt/nvm/nvm.sh
-#source /opt/homebrew/opt/nvm/etc/bash_completion.d/nvm
-
-
+# source /usr/local/opt/nvm/nvm.sh
+# source /usr/local/opt/nvm/etc/bash_completion.d/nvm
+source /opt/homebrew/opt/nvm/nvm.sh
+source /opt/homebrew/opt/nvm/etc/bash_completion.d/nvm
 
 autoload -U add-zsh-hook
 load-nvmrc() {

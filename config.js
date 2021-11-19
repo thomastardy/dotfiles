@@ -107,7 +107,6 @@ module.exports = {
         // 'homebrew/cask-drivers/logitech-gaming-software',
         'parallels',
         'qlmarkdown',
-        'qlprettypatch',
         'quicklook-json',
         // 'sublime-text',
         'visual-studio-code',
@@ -138,6 +137,9 @@ module.exports = {
         'grandperspective',
         'obsidian',
         'rocket',
+        'zoom',
+        'airserver',
+        'apache-directory-studio',
     ],
     gem: [],
     npm: [
@@ -155,20 +157,19 @@ module.exports = {
         '@angular/cli'
     ],
     mas: [
-        '1480793815', // GoodNotes (5.4.14)
         '975937182', // Fantastical (3.3.7)
         '409183694', // Keynote (11.0.1)
         '441258766', // Magnet (2.6.0)
         '1295203466', // Microsoft Remote Desktop (10.6.1)
         '742239147', // Project Viewer 365 (20.66.1083)
-        '942265351', // gardenPlanner (3.7.81)
+        // '942265351', // gardenPlanner (3.7.81)
         '1444383602', // GoodNotes (5.6.52)
         '408981434', // iMovie (10.2.3)
         '497799835', // Xcode (12.4)
         '463362050', // PhotoSweeper (3.9.3)
         '409201541', // Pages (11.0)
         '682658836', // GarageBand (10.4.3)
-        '1176895641', // Spark – Email App by Readdle (2.9.22)
         '409203825', // Numbers (11.0)
+        '639968404', // Parcel - Delivery Tracking    (7.2.2)
     ]
 };
