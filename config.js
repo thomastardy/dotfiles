@@ -53,6 +53,7 @@ module.exports = {
         // Install wget with IRI support
         'wget --enable-iri',
         'maven',
+        'maven-completion',
         'netcat',
         'ssh-copy-id',
         'https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb',
@@ -114,7 +115,7 @@ module.exports = {
         'vnc-viewer',
         'whatsapp',
         'openjdk',
-        'zulu',
+        'temurin',
         'zulu8',
         'zulu11',
         'temurin11',
