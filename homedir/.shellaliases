@@ -10,9 +10,9 @@ alias mssql.ncat='sudo ncat --sh-exec "ncat 10.211.55.9 1433" -l 1433 --keep-ope
 
 #############################
 # Java
-alias setJDK8='export JAVA_HOME=`/usr/libexec/java_home -a aarch64 -v 1.8.0`'
-alias setJDK11='export JAVA_HOME=`/usr/libexec/java_home -a aarch64 -v 11`'
-alias setJDK17='export JAVA_HOME=`/usr/libexec/java_home -a aarch64 -v 17`'
+alias setJDK8='export JAVA_HOME=`/usr/libexec/java_home -a arm64 -v 1.8.0`'
+alias setJDK11='export JAVA_HOME=`/usr/libexec/java_home -a arm64 -v 11`'
+alias setJDK17='export JAVA_HOME=`/usr/libexec/java_home -a arm64 -v 17`'
 
 #############################
 # Utilities
