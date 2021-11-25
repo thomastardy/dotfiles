@@ -132,7 +132,7 @@ module.exports = {
         'teamviewer',
         'tibco-jaspersoft-studio',
         // 'bear',
-        'devonthink',
+        // 'devonthink',
         'mountain',
         'microsoft-teams',
         'google-chrome',
