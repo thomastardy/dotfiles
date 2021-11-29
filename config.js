@@ -143,6 +143,8 @@ module.exports = {
         'zoom',
         'airserver',
         'apache-directory-studio',
+        'netnewswire',
+        'acorn',
     ],
     gem: [],
     npm: [
