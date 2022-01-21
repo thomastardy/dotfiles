@@ -125,6 +125,7 @@ alias apache.restart="sudo apachectl restart"
 #alias git.cleanup='git branch --merged | grep -v "\*" | grep -vw master | grep -vw develop | grep -v release | xargs -n 1 git branch -d'
 alias git.cleanup='git remote prune origin && git branch -vv | grep '"'"'origin/.*: gone]'"'"' | awk '"'"'{print $1}'"'"' | xargs git branch -D'
 alias git.checkout='git fetch && git checkout '
+alias git.update.date='git commit --amend --no-edit --date "$(date)"'
 
 # Backup
 alias backup.speedup="sudo sysctl debug.lowpri_throttle_enabled=0"
