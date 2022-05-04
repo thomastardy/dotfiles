@@ -21,3 +21,6 @@ export PATH=/opt/homebrew/Cellar/postgresql@12/12.5/bin:$PATH
 
 # gcloud
 export PATH=$PATH:/Users/ttardy/Tools/google-cloud-sdk/bin
+
+# mjml
+export PATH=$PATH:./node_modules/.bin

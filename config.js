@@ -119,6 +119,7 @@ module.exports = {
         'zulu8',
         'zulu11',
         'temurin11',
+        'temurin17',
         'virtualbox',
         // 'postman',
         'handbreak',
