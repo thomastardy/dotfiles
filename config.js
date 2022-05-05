@@ -137,7 +137,6 @@ module.exports = {
         'microsoft-teams',
         'google-chrome',
         'homebrew/cask-drivers/fujitsu-scansnap-home',
-        'brave-browser',
         'grandperspective',
         'obsidian',
         'rocket',
