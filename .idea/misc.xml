@@ -79,11 +79,6 @@
     </LinkMapSettings>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" />
-  <component name="SwUserDefinedSpecifications">
-    <option name="specTypeByUrl">
-      <map />
-    </option>
-  </component>
   <component name="designer2.settings">
     <option name="autodetectServerAddress" value="true" />
     <option name="serverIp" value="localhost" />
