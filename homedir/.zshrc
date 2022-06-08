@@ -34,6 +34,15 @@ plugins=(colorize compleat dirpersist git gulp gradle history cp docker docker-c
 
 ZSH_DISABLE_COMPFIX=true
 
+# https://docs.brew.sh/Shell-Completion
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
 source $ZSH/oh-my-zsh.sh
 
 # source /usr/local/opt/nvm/nvm.sh
