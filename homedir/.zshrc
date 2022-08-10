@@ -68,3 +68,7 @@ unsetopt correct
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 unalias mvnd
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
