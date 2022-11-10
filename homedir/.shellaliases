@@ -226,7 +226,7 @@ alias ebiwork.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/E
 alias ebiwork.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-ebi-work/pull-requests"'
 alias ebiwork.link.wiki='open "https://wiki.mptechnology.ch/display/EB/EbiWork"'
 alias ebiwork.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=13782"'
-alias ebiwork.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=45"'
+alias ebiwork.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=79"'
 alias ebiwork.link='ebiwork.link.jenkins; ebiwork.link.pullrequests; ebiwork.link.wiki; ebiwork.link.jiraopeninrelease; ebiwork.link.jiraboard'
 alias ebiwork.app='ebiwork.cd.new; app.docker; app.intellij'
 alias ebiwork.start='ebiwork.app; ebiwork.link'
