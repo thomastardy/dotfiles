@@ -207,8 +207,11 @@ alias elsa.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.
 alias elsa.link='elsa.link.jenkins; elsa.link.pullrequests; elsa.link.wiki; elsa.link.jiraopeninrelease; elsa.link.jiraboard'
 alias elsa.app='elsa.cd.new; app.docker; app.intellij'
 alias elsa.start='elsa.app; elsa.link'
+alias elsa.docker.main='docker compose -p elsa -f src/main/docker/postgresql.yml down && docker compose -p elsa -f src/main/docker/postgresql.yml up --build'
+alias elsa.docker.test='docker compose -p elsa-test -f src/test/docker/postgresql-test.yml down && docker compose -p elsa-test -f src/test/docker/postgresql-test.yml up'
 alias elsa.cd='cd /Users/ttardy/Projects/eberhard/eberhard-elsa'
 alias elsa.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-elsa -a iterm'
+alias boka.docker.main='docker compose -p bo-kafka-adapter -f src/main/docker/postgresql.yml down && docker compose -p bo-kafka-adapter -f src/main/docker/postgresql.yml up'
 
 # mp aliases for Eberhard Web PDF Editor
 alias wpe.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/"'
@@ -231,6 +234,8 @@ alias ebiwork.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoa
 alias ebiwork.link='ebiwork.link.jenkins; ebiwork.link.pullrequests; ebiwork.link.wiki; ebiwork.link.jiraopeninrelease; ebiwork.link.jiraboard'
 alias ebiwork.app='ebiwork.cd.new; app.docker; app.intellij'
 alias ebiwork.start='ebiwork.app; ebiwork.link'
+alias ebiwork.docker.main='docker compose -p ebi-work -f src/main/docker/postgresql.yml down && docker compose -p ebi-work -f src/main/docker/postgresql.yml up --build'
+alias ebiwork.docker.test='docker compose -p ebi-work-test -f src/test/docker/postgresql-test.yml down && docker compose -p ebi-work-test -f src/test/docker/postgresql-test.yml up --build'
 alias ebiwork.cd='cd /Users/ttardy/Projects/eberhard/eberhard-ebi-work'
 alias ebiwork.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-ebi-work -a iterm'
 
@@ -243,6 +248,8 @@ alias trm.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.j
 alias trm.link='trm.link.jenkins; trm.link.pullrequests; trm.link.wiki; trm.link.jiraopeninrelease; trm.link.jiraboard'
 alias trm.app='trm.cd.new; app.docker; app.intellij'
 alias trm.start='trm.app; trm.link'
+alias trm.docker.main='docker compose -p trm-portal -f src/main/docker/postgresql.yml down && docker compose -p trm-portal -f src/main/docker/postgresql.yml up --build'
+alias trm.docker.test='docker compose -p trm-portal-test -f src/test/docker/postgresql-test.yml down && docker compose -p trm-portal-test -f src/test/docker/postgresql-test.yml up'
 alias trm.cd='cd /Users/ttardy/Projects/eberhard/eberhard-trm-portal'
 alias trm.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-trm-portal -a iterm'
 
@@ -255,6 +262,8 @@ alias say.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.j
 alias say.link='say.link.jenkins; say.link.pullrequests; say.link.wiki; say.link.jiraopeninrelease; say.link.jiraboard'
 alias say.app='say.cd.new; app.docker; app.intellij'
 alias say.start='say.app; say.link'
+alias say.docker.main='docker compose -p sayano -f src/main/docker/mssql.yml down && docker compose -p sayano -f src/main/docker/mssql.yml up'
+alias say.docker.test='docker compose -p sayano-test -f src/test/docker/mssql-test.yml down && docker compose -p sayano-test -f src/test/docker/mssql-test.yml up --build'
 alias say.cd='cd /Users/ttardy/Projects/sayano/sayano-app'
 alias say.cd.new='open /Users/ttardy/Projects/sayano/sayano-app -a iterm'
 
@@ -278,6 +287,8 @@ alias pca.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.j
 alias pca.link='pca.link.jenkins; pca.link.pullrequests; pca.link.wiki; pca.link.jiraopeninrelease; pca.link.jiraboard'
 alias pca.app='pca.cd.new; app.docker; app.intellij'
 alias pca.start='pca.app; pca.link'
+alias pca.docker.main='docker compose -p perils-contacts -f src/main/docker/postgresql.yml down && docker compose -p perils-contacts -f src/main/docker/postgresql.yml up'
+alias pca.docker.test='docker compose -p perils-contacts-test -f src/test/docker/postgresql-test.yml down && docker compose -p perils-contacts-test -f src/test/docker/postgresql-test.yml up'
 alias pca.cd='cd /Users/ttardy/Projects/perils/contacts'
 alias pca.cd.new='open /Users/ttardy/Projects/perils/contacts -a iterm'
 alias pca.tunnel='/Users/ttardy/Projects/perils/contacts/src/main/scripts/tunnel/ssh_tunnel_contacts.sh'
@@ -302,6 +313,7 @@ alias plf.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.j
 alias plf.link='plf.link.jenkins; plf.link.pullrequests; plf.link.wiki; plf.link.jiraopeninrelease; plf.link.jiraboard'
 alias plf.app='plf.cd.new; app.docker; app.intellij'
 alias plf.start='plf.app; plf.link'
+alias plf.docker.main='docker compose -p lossforecast -f src/main/docker/docker-compose.yml down && docker compose -p lossforecast -f src/main/docker/docker-compose.yml up'
 alias plf.cd='cd /Users/ttardy/Projects/perils/lossforecast'
 alias plf.cd.new='open /Users/ttardy/Projects/perils/lossforecast -a iterm'
 
