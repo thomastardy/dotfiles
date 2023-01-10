@@ -190,7 +190,7 @@ alias app.docker='open -a /Applications/Docker.app'
 alias app.keepingyouawake.toggle='osascript -e '"'"'tell application "System Events" to tell process "KeepingYouAwake" to click menu bar item 1 of menu bar 1'"'"''
 
 # mp aliases for APG SSO
-alias apg.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/APG/"'
+alias apg.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/APG/"'
 alias apg.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/APG/repos/apg-sso/pull-requests"'
 alias apg.link='apg.link.jenkins; apg.link.pullrequests'
 alias apg.app='apg.cd.new; app.docker; app.intellij'
@@ -199,7 +199,7 @@ alias apg.cd='cd /Users/ttardy/Projects/apg/apg-sso'
 alias apg.cd.new='open /Users/ttardy/Projects/apg/apg-sso -a iterm'
 
 # mp aliases for Eberhard eLSA
-alias elsa.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/Eberhard/"'
+alias elsa.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/"'
 alias elsa.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-elsa/pull-requests"'
 alias elsa.link.wiki='open "https://wiki.mptechnology.ch/display/EB/eLSA"'
 alias elsa.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=13782"'
@@ -211,7 +211,7 @@ alias elsa.cd='cd /Users/ttardy/Projects/eberhard/eberhard-elsa'
 alias elsa.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-elsa -a iterm'
 
 # mp aliases for Eberhard Web PDF Editor
-alias wpe.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/Eberhard/"'
+alias wpe.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/"'
 alias wpe.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-web-pdf-editor/pull-requests"'
 alias wpe.link.wiki='open "https://wiki.mptechnology.ch/display/EB/eLSA"'
 alias wpe.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=13782"'
@@ -223,7 +223,7 @@ alias wpe.cd='cd /Users/ttardy/Projects/eberhard/eberhard-web-pdf-editor'
 alias wpe.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-web-pdf-editor -a iterm'
 
 # mp aliases for Eberhard EbiWork
-alias ebiwork.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/Eberhard/"'
+alias ebiwork.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/"'
 alias ebiwork.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-ebi-work/pull-requests"'
 alias ebiwork.link.wiki='open "https://wiki.mptechnology.ch/display/EB/EbiWork"'
 alias ebiwork.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=17271"'
@@ -234,8 +234,20 @@ alias ebiwork.start='ebiwork.app; ebiwork.link'
 alias ebiwork.cd='cd /Users/ttardy/Projects/eberhard/eberhard-ebi-work'
 alias ebiwork.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-ebi-work -a iterm'
 
+# mp aliases for Eberhard TRM Portal
+alias trm.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/"'
+alias trm.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-trm-portal/pull-requests"'
+alias trm.link.wiki='open "https://wiki.mptechnology.ch/display/EB/TRM+Portal"'
+alias trm.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=17470"'
+alias trm.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=81&selectedIssue=TRM-20"'
+alias trm.link='trm.link.jenkins; trm.link.pullrequests; trm.link.wiki; trm.link.jiraopeninrelease; trm.link.jiraboard'
+alias trm.app='trm.cd.new; app.docker; app.intellij'
+alias trm.start='trm.app; trm.link'
+alias trm.cd='cd /Users/ttardy/Projects/eberhard/eberhard-trm-portal'
+alias trm.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-trm-portal -a iterm'
+
 # mp aliases for SAYANO
-alias say.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/sayano/"'
+alias say.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/sayano/"'
 alias say.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/SAY/repos/sayano-app/pull-requests"'
 alias say.link.wiki='open "https://wiki.mptechnology.ch/display/SAY/SAYANO"'
 alias say.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=12874"'
@@ -247,7 +259,7 @@ alias say.cd='cd /Users/ttardy/Projects/sayano/sayano-app'
 alias say.cd.new='open /Users/ttardy/Projects/sayano/sayano-app -a iterm'
 
 # mp aliases for BERAG Digital PK
-alias dpk.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/dpk/"'
+alias dpk.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/dpk/"'
 alias dpk.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/DPK/repos/dpk-app-cockpit/pull-requests"; open "https://kepler.mptechnology.ch/bitbucket/projects/DPK/repos/dpk-firmenportal/pull-requests"'
 alias dpk.link.wiki='open "https://wiki.mptechnology.ch/display/DPK/DigitalPK"'
 alias dpk.link.jiraboard='open "https://beragpk.atlassian.net/secure/RapidBoard.jspa?rapidView=1"; open "https://beragpk.atlassian.net/secure/RapidBoard.jspa?rapidView=2"'
@@ -258,7 +270,7 @@ alias dpk.cd='cd /Users/ttardy/Projects/digital-pk'
 alias dpk.cd.new='open /Users/ttardy/Projects/digital-pk -a iterm'
 
 # mp aliases for PERILS Contacts Application
-alias pca.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/PERILS/"'
+alias pca.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/"'
 alias pca.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/contacts/pull-requests"'
 alias pca.link.wiki='open "https://wiki.mptechnology.ch/display/PER/PERILS+Contacts+Application"'
 alias pca.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=16970"'
@@ -271,7 +283,7 @@ alias pca.cd.new='open /Users/ttardy/Projects/perils/contacts -a iterm'
 alias pca.tunnel='/Users/ttardy/Projects/perils/contacts/src/main/scripts/tunnel/ssh_tunnel_contacts.sh'
 
 # mp aliases for Perils
-alias per.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/PERILS/"'
+alias per.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/"'
 alias per.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/perils/pull-requests"'
 alias per.link.wiki='open "https://wiki.mptechnology.ch/pages/viewpage.action?pageId=327900"'
 alias per.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=38&view=detail"'
@@ -282,7 +294,7 @@ alias per.cd='cd /Users/ttardy/Projects/perils/perils'
 alias per.cd.new='open /Users/ttardy/Projects/perils/perils -a iterm'
 
 # mp aliases for Loss Forecast
-alias plf.link.jenkins='open "http://reactor.mptechnology.com/jenkins/view/PERILS/"'
+alias plf.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/"'
 alias plf.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/lossforecast/pull-requests"'
 alias plf.link.wiki='open "https://wiki.mptechnology.ch/pages/viewpage.action?pageId=53380161"'
 alias plf.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=16370"'
@@ -312,8 +324,8 @@ alias pexa.cd.pq.mipoc.new='open /Users/ttardy/Projects/pexapark/pexaquant-monte
 alias pexa.start='pexa.app; pexa.link'
 
 # mp alias for Evalueserve
-alias isb.link.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-customer/'
-alias ibb.link.jenkins='open http://reactor.mptechnology.com/jenkins/view/isb-khive/'
+alias isb.link.jenkins='open https://reactor.mptechnology.ch/jenkins/view/isb-customer/'
+alias ibb.link.jenkins='open https://reactor.mptechnology.ch/jenkins/view/isb-khive/'
 alias isb.link.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-customer/pull-requests'
 alias ibb.link.pullrequests='open https://kepler.mptechnology.ch/bitbucket/projects/IB/repos/isb-khive/pull-requests'
 alias isb.link.jiraopeninrelease='open https://services.mptechnology.ch/jira/issues/?filter=12406'
