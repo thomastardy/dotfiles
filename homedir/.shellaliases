@@ -352,6 +352,14 @@ alias cloatiming='osascript -e '"'"'tell application "/Applications/Setapp/Timin
 alias cloagooglesync='osascript -e '"'"'tell application "/Applications/Backup and Sync.app/Contents/MacOS/Backup and Sync" to quit'"'"''
 alias goprivate='cloatiming; cloagooglesync'
 
+# private aliases for tardy.ch
+alias tardy.link.github='open https://github.com/thomastardy/tardy-site'
+alias tardy.link='tardy.link.github'
+alias tardy.app='tardy.cd.new; app.intellij'
+alias tardy.start='tardy.app; tardy.link'
+alias tardy.cd='cd /Users/ttardy/Projects/tardy/tardy-site'
+alias tardy.cd.new='open /Users/ttardy/Projects/tardy/tardy-site -a iterm'
+
 # private aliases for Lunki's Würmlitaucher
 alias wt.link.github='open https://github.com/thomastardy/wt-site'
 alias wt.link='wt.link.github'
