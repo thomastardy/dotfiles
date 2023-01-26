@@ -199,7 +199,7 @@ alias apg.cd='cd /Users/ttardy/Projects/apg/apg-sso'
 alias apg.cd.new='open /Users/ttardy/Projects/apg/apg-sso -a iterm'
 
 # mp aliases for Eberhard eLSA
-alias elsa.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/"'
+alias elsa.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-elsa-pipeline/"'
 alias elsa.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-elsa/pull-requests"'
 alias elsa.link.wiki='open "https://wiki.mptechnology.ch/display/EB/eLSA"'
 alias elsa.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=13782"'
@@ -214,7 +214,7 @@ alias elsa.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-elsa -a iterm'
 alias boka.docker.main='docker compose -p bo-kafka-adapter -f src/main/docker/postgresql.yml down && docker compose -p bo-kafka-adapter -f src/main/docker/postgresql.yml up'
 
 # mp aliases for Eberhard Web PDF Editor
-alias wpe.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/"'
+alias wpe.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-web-pdf-editor-pipeline/"'
 alias wpe.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-web-pdf-editor/pull-requests"'
 alias wpe.link.wiki='open "https://wiki.mptechnology.ch/display/EB/eLSA"'
 alias wpe.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=13782"'
@@ -226,7 +226,7 @@ alias wpe.cd='cd /Users/ttardy/Projects/eberhard/eberhard-web-pdf-editor'
 alias wpe.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-web-pdf-editor -a iterm'
 
 # mp aliases for Eberhard EbiWork
-alias ebiwork.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/"'
+alias ebiwork.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-ebi-work-pipeline/"'
 alias ebiwork.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-ebi-work/pull-requests"'
 alias ebiwork.link.wiki='open "https://wiki.mptechnology.ch/display/EB/EbiWork"'
 alias ebiwork.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=17271"'
@@ -240,7 +240,7 @@ alias ebiwork.cd='cd /Users/ttardy/Projects/eberhard/eberhard-ebi-work'
 alias ebiwork.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-ebi-work -a iterm'
 
 # mp aliases for Eberhard TRM Portal
-alias trm.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/"'
+alias trm.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-trm-portal-pipeline/"'
 alias trm.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/EB/repos/eberhard-trm-portal/pull-requests"'
 alias trm.link.wiki='open "https://wiki.mptechnology.ch/display/EB/TRM+Portal"'
 alias trm.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=17470"'
@@ -279,7 +279,7 @@ alias dpk.cd='cd /Users/ttardy/Projects/digital-pk'
 alias dpk.cd.new='open /Users/ttardy/Projects/digital-pk -a iterm'
 
 # mp aliases for PERILS Contacts Application
-alias pca.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/"'
+alias pca.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/job/perils-contacts-application-pipeline/"'
 alias pca.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/contacts/pull-requests"'
 alias pca.link.wiki='open "https://wiki.mptechnology.ch/display/PER/PERILS+Contacts+Application"'
 alias pca.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=16970"'
@@ -294,7 +294,7 @@ alias pca.cd.new='open /Users/ttardy/Projects/perils/contacts -a iterm'
 alias pca.tunnel='/Users/ttardy/Projects/perils/contacts/src/main/scripts/tunnel/ssh_tunnel_contacts.sh'
 
 # mp aliases for Perils
-alias per.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/"'
+alias per.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/job/perils-pipeline/"'
 alias per.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/perils/pull-requests"'
 alias per.link.wiki='open "https://wiki.mptechnology.ch/pages/viewpage.action?pageId=327900"'
 alias per.link.jiraboard='open "https://jira.mptechnology.ch/secure/RapidBoard.jspa?rapidView=38&view=detail"'
@@ -305,7 +305,7 @@ alias per.cd='cd /Users/ttardy/Projects/perils/perils'
 alias per.cd.new='open /Users/ttardy/Projects/perils/perils -a iterm'
 
 # mp aliases for Loss Forecast
-alias plf.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/"'
+alias plf.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/job/perils-lossforecast-pipeline/"'
 alias plf.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/lossforecast/pull-requests"'
 alias plf.link.wiki='open "https://wiki.mptechnology.ch/pages/viewpage.action?pageId=53380161"'
 alias plf.link.jiraopeninrelease='open "https://jira.mptechnology.ch/issues/?filter=16370"'
