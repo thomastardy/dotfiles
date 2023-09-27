@@ -10,9 +10,10 @@ alias mssql.ncat='sudo ncat --sh-exec "ncat 10.211.55.9 1433" -l 1433 --keep-ope
 
 #############################
 # Java
-alias setJDK8='export JAVA_HOME=`/usr/libexec/java_home -a arm64 -v 1.8.0`'
-alias setJDK11='export JAVA_HOME=`/usr/libexec/java_home -a arm64 -v 11`'
-alias setJDK17='export JAVA_HOME=`/usr/libexec/java_home -a arm64 -v 17`'
+#set by sdkman https://sdkman.io/
+#alias setJDK8='export JAVA_HOME=`/usr/libexec/java_home -a arm64 -v 1.8.0`'
+#alias setJDK11='export JAVA_HOME=`/usr/libexec/java_home -a arm64 -v 11`'
+#alias setJDK17='export JAVA_HOME=`/usr/libexec/java_home -a arm64 -v 17`'
 
 #############################
 # Utilities
@@ -219,7 +220,8 @@ alias elsa.link='elsa.link.jenkins; elsa.link.pullrequests; elsa.link.sonar; els
 alias elsa.app='elsa.cd.new; app.docker; app.intellij'
 alias elsa.start='elsa.app; elsa.link'
 alias elsa.docker.main='docker compose -p elsa -f src/main/docker/postgresql.yml down && docker compose -p elsa -f src/main/docker/postgresql.yml up --build'
-alias elsa.docker.test='docker compose -p elsa-test -f src/test/docker/postgresql-test.yml down && docker compose -p elsa-test -f src/test/docker/postgresql-test.yml up'
+alias elsa.docker.test='docker compose -p elsa-test -f src/test/docker/docker-compose-test.yml down && docker compose -p elsa-test -f src/test/docker/docker-compose-test.yml up'
+alias elsa.docker.test.old='docker compose -p elsa-test -f src/test/docker/postgresql-test.yml down && docker compose -p elsa-test -f src/test/docker/postgresql-test.yml up'
 alias elsa.cd='cd /Users/ttardy/Projects/eberhard/eberhard-elsa'
 #alias elsa.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-elsa -a iterm'
 alias elsa.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-elsa -a warp'

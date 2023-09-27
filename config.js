@@ -114,12 +114,12 @@ module.exports = {
         'viscosity',
         'vnc-viewer',
         'whatsapp',
-        'openjdk',
-        'temurin',
-        'zulu8',
-        'zulu11',
-        'temurin11',
-        'temurin17',
+        // 'openjdk', installed by sdkman https://sdkman.io/
+        // 'temurin', installed by sdkman https://sdkman.io/
+        // 'zulu8', installed by sdkman https://sdkman.io/
+        // 'zulu11', installed by sdkman https://sdkman.io/
+        // 'temurin11', installed by sdkman https://sdkman.io/
+        // 'temurin17', installed by sdkman https://sdkman.io/
         'virtualbox',
         // 'postman',
         'handbreak',
