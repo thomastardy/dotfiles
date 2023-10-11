@@ -134,7 +134,7 @@ module.exports = {
         // 'bear',
         // 'devonthink',
         'mountain',
-        'microsoft-teams',
+        // 'microsoft-teams', install manually
         'google-chrome',
         'homebrew/cask-drivers/fujitsu-scansnap-home',
         'grandperspective',
