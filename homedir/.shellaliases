@@ -204,6 +204,7 @@ alias app.postgres='open -a /Applications/Postgres.app'
 alias app.ytmusic='open -a /Applications/YT\ Music.app'
 alias app.docker='open -a /Applications/Docker.app'
 alias app.keepingyouawake.toggle='osascript -e '"'"'tell application "System Events" to tell process "KeepingYouAwake" to click menu bar item 1 of menu bar 1'"'"''
+alias spring-crypto-cli='java -jar ~/Tools/spring-crypto-cli-1.1.0-jar-with-dependencies.jar'
 
 # mp aliases for APG SSO
 alias apg.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/APG/"'
@@ -352,8 +353,9 @@ alias pca.cd.new='open /Users/ttardy/Projects/perils/contacts -a warp'
 alias pca.tunnel='/Users/ttardy/Projects/perils/contacts/src/main/scripts/tunnel/ssh_tunnel_contacts.sh'
 
 # mp aliases for Perils
-alias per.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/job/perils-pipeline/"'
-alias per.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/PRL/repos/perils/pull-requests"'
+alias per.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/job/perils-portal-pipeline/"'
+alias per.link.pullrequests='open "https://github.com/mptechnology/perils-portal/pulls"'
+#alias per.link.sonar='open "https://sonarcloud.io/summary/overall?id=mptechnology_perils-contacts"'
 alias per.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/PER/pages/2098203/PERILS+Loss+Index+Platform+perils.org"'
 alias per.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/PRL/boards/38"'
 alias per.link='per.link.jenkins; per.link.pullrequests; per.link.wiki; per.link.jiraboard'
@@ -365,7 +367,7 @@ alias per.cd.new='open /Users/ttardy/Projects/perils/perils -a warp'
 
 # mp aliases for Loss Forecast
 alias plf.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/job/perils-lossforecast-pipeline-github/"'
-alias plf.link.pullrequests='open "https://github.com/mptechnology/perils-lossforecast/pulls"'
+alias plf.link.pullrequests='open "https://github.com/mptechnology/perils-portal/pulls"'
 alias plf.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/PER/pages/2098076/Loss+Forecast+Wind+Jeannie+Hail+Jeannie"'
 alias plf.link.jiraopeninrelease='open "https://mp-technology.atlassian.net/issues/?filter=16370"'
 alias plf.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/PLF/boards/34"'
