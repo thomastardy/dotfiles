@@ -381,6 +381,19 @@ alias plf.cd='cd /Users/ttardy/Projects/perils/perils-lossforecast'
 #alias plf.cd.new='open /Users/ttardy/Projects/perils/perils-lossforecast -a iterm'
 alias plf.cd.new='open /Users/ttardy/Projects/perils/perils-lossforecast -a warp'
 
+# mp aliases for mp Timetrack
+alias tt.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/mp/job/mp-timetrack-github/"'
+alias tt.link.pullrequests='open "https://github.com/mptechnology/mp-timetrack/pulls"'
+alias tt.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_timetrack"'
+alias tt.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/MPT/pages/1409183/Timetrack+Application"'
+alias tt.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/MTT/boards/54"'
+alias tt.link='tt.link.jenkins; tt.link.pullrequests; tt.link.sonar; tt.link.wiki; tt.link.jiraboard'
+alias tt.app='tt.cd.new; app.docker; app.intellij'
+alias tt.start='tt.app; tt.link'
+alias tt.docker.main='docker compose -p timetrack -f timetrack-core/src/main/docker/mariadb.yml down && docker compose -p timetrack -f timetrack-core/src/main/docker/mariadb.yml up'
+alias tt.cd='cd /Users/ttardy/Projects/mp/timetrack'
+alias tt.cd.new='open /Users/ttardy/Projects/mp/timetrack -a warp'
+
 # private aliases
 alias cloatiming='osascript -e '"'"'tell application "/Applications/Setapp/Timing.app/Contents/Library/LoginItems/TimingHelper.app/Contents/MacOS/TimingHelper" to quit'"'"''
 alias cloagooglesync='osascript -e '"'"'tell application "/Applications/Backup and Sync.app/Contents/MacOS/Backup and Sync" to quit'"'"''
