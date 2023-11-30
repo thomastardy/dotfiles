@@ -115,3 +115,5 @@
 	template = /Users/ttardy/.stCommitMsg
 [pull]
 	rebase = true
+[pager]
+	branch = false

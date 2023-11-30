@@ -193,18 +193,8 @@ alias app.docker='open -a /Applications/Docker.app'
 alias app.keepingyouawake.toggle='osascript -e '"'"'tell application "System Events" to tell process "KeepingYouAwake" to click menu bar item 1 of menu bar 1'"'"''
 alias spring-crypto-cli='java -jar ~/Tools/spring-crypto-cli-1.1.0-jar-with-dependencies.jar'
 
-# mp aliases for APG SSO
-alias apg.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/APG/"'
-alias apg.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/APG/repos/apg-sso/pull-requests"'
-alias apg.link='apg.link.jenkins; apg.link.pullrequests'
-alias apg.app='apg.cd.new; app.docker; app.intellij'
-alias apg.start='apg.app; apg.link'
-alias apg.cd='cd /Users/ttardy/Projects/apg/apg-sso'
-#alias apg.cd.new='open /Users/ttardy/Projects/apg/apg-sso -a iterm'
-alias apg.cd.new='open /Users/ttardy/Projects/apg/apg-sso -a warp'
-
 # mp aliases for Eberhard eLSA
-alias elsa.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-elsa-pipeline-github/"'
+alias elsa.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-elsa-pipeline/"'
 alias elsa.link.pullrequests='open "https://github.com/mptechnology/eberhard-elsa/pulls"'
 alias elsa.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_eberhard-elsa"'
 alias elsa.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/724547/eLSA"'
@@ -221,7 +211,7 @@ alias elsa.cd='cd /Users/ttardy/Projects/eberhard/eberhard-elsa'
 alias elsa.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-elsa -a warp'
 
 # mp aliases for Eberhard Windream Java Client
-alias ebiwin.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-windream-java-client-pipeline-github/"'
+alias ebiwin.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-bo-kafka-adapter-pipeline/"'
 alias ebiwin.link.pullrequests='open "https://github.com/mptechnology/eberhard-windream-java-client/pulls"'
 alias ebiwin.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/724547/eLSA"'
 alias ebiwin.link.jiraopeninrelease='open "https://mp-technology.atlassian.net/issues/?filter=13782"'
@@ -234,7 +224,7 @@ alias ebiwin.cd='cd /Users/ttardy/Projects/eberhard/eberhard-windream-java-clien
 alias ebiwin.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-windream-java-client -a warp'
 
 # mp aliases for Eberhard BO Kafka Adapter
-alias boka.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-bo-kafka-adapter-pipeline-github/"'
+alias boka.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-bo-kafka-adapter-pipeline/"'
 alias boka.link.pullrequests='open "https://github.com/mptechnology/eberhard-bo-kafka-adapter/pulls"'
 alias boka.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_eberhard-bo-kafka-adapter"'
 alias boka.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/724547/eLSA"'
@@ -249,7 +239,7 @@ alias boka.cd='cd /Users/ttardy/Projects/eberhard/eberhard-bo-kafka-adapter'
 alias boka.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-bo-kafka-adapter -a warp'
 
 # mp aliases for Eberhard Web PDF Editor
-alias wpe.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-web-pdf-editor-pipeline-github/"'
+alias wpe.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-web-pdf-editor-pipeline/"'
 alias wpe.link.pullrequests='open "https://github.com/mptechnology/eberhard-web-pdf-editor/pulls"'
 alias wpe.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_eberhard-web-pdf-editor"'
 alias wpe.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/724547/eLSA"'
@@ -263,7 +253,7 @@ alias wpe.cd='cd /Users/ttardy/Projects/eberhard/eberhard-web-pdf-editor'
 alias wpe.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-web-pdf-editor -a warp'
 
 # mp aliases for Eberhard EbiWork
-alias ebiwork.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-ebi-work-pipeline-github/"'
+alias ebiwork.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-ebi-work-pipeline/"'
 alias ebiwork.link.pullrequests='open "https://github.com/mptechnology/eberhard-ebi-work/pulls"'
 alias ebiwork.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_eberhard-ebi-work"'
 alias ebiwork.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/729813/EbiWork"'
@@ -279,7 +269,7 @@ alias ebiwork.cd='cd /Users/ttardy/Projects/eberhard/eberhard-ebi-work'
 alias ebiwork.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-ebi-work -a warp'
 
 # mp aliases for Eberhard TRM Portal
-alias trm.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/Eberhard/job/eberhard-trm-portal-pipeline-github/"'
+alias trm.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-trm-portal-pipeline/"'
 alias trm.link.pullrequests='open "https://github.com/mptechnology/eberhard-trm-portal/pulls"'
 alias trm.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_eberhard-trm-portal"'
 alias trm.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/723714/TRM+Portal"'
@@ -295,7 +285,7 @@ alias trm.cd='cd /Users/ttardy/Projects/eberhard/eberhard-trm-portal'
 alias trm.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-trm-portal -a warp'
 
 # mp aliases for SAYANO
-alias say.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/sayano/job/sayano-app-pipeline-github/"'
+alias say.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/SAYANO/job/sayano-app-pipeline/"'
 alias say.link.pullrequests='open "https://github.com/mptechnology/sayano-app/pulls"'
 alias say.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_sayano-app"'
 alias say.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/SAY/overview"'
@@ -310,20 +300,8 @@ alias say.cd='cd /Users/ttardy/Projects/sayano/sayano-app'
 #alias say.cd.new='open /Users/ttardy/Projects/sayano/sayano-app -a iterm'
 alias say.cd.new='open /Users/ttardy/Projects/sayano/sayano-app -a warp'
 
-# mp aliases for BERAG Digital PK
-alias dpk.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/dpk/"'
-alias dpk.link.pullrequests='open "https://kepler.mptechnology.ch/bitbucket/projects/DPK/repos/dpk-app-cockpit/pull-requests"; open "https://kepler.mptechnology.ch/bitbucket/projects/DPK/repos/dpk-firmenportal/pull-requests"'
-alias dpk.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/DPK/overview"'
-alias dpk.link.jiraboard='open "https://beragpk.atlassian.net/secure/RapidBoard.jspa?rapidView=1"; open "https://beragpk.atlassian.net/secure/RapidBoard.jspa?rapidView=2"'
-alias dpk.link='dpk.link.jenkins; dpk.link.pullrequests; dpk.link.wiki; dpk.link.jiraboard'
-alias dpk.app='dpk.cd.new; app.docker; app.intellij'
-alias dpk.start='dpk.app; dpk.link'
-alias dpk.cd='cd /Users/ttardy/Projects/digital-pk'
-#alias dpk.cd.new='open /Users/ttardy/Projects/digital-pk -a iterm'
-alias dpk.cd.new='open /Users/ttardy/Projects/digital-pk -a warp'
-
 # mp aliases for PERILS Contacts Application
-alias pca.link.jenkins='open "https://reactor.mptechnology.ch/jenkins/view/PERILS/job/perils-contacts-application-pipeline-github/"'
+alias pca.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/PERILS/job/perils-contacts-application-pipeline/"'
 alias pca.link.pullrequests='open "https://github.com/mptechnology/perils-contacts/pulls"'
 alias pca.link.sonar='open "https://sonarcloud.io/summary/overall?id=mptechnology_perils-contacts"'
 alias pca.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/PER/pages/2098270/PERILS+Contacts+Application"'
