@@ -105,7 +105,7 @@ alias update.system='sudo softwareupdate -i -a -R'
 alias update.mas='mas upgrade'
 # brew upgrade --greedy
 alias update.brew='brew update; brew upgrade; brew cleanup -s;'
-alias update.sdk='sdk version; sdk current; sdk selfupdate; sdk update; sdk update java; sdk update gradle; sdk update maven; sdk current;'
+alias update.sdk='sdk version; sdk current; sdk selfupdate; sdk update; sdk install java; sdk install gradle; sdk install maven; sdk list java; sdk current;'
 alias update.node='nvm ls-remote --lts; npm list -g --depth=0; nvm install --lts --reinstall-packages-from=current --latest-npm; npm i -g npm-check-updates; npm list -g --depth=0; ncu -g'
 
 alias vtop="vtop --theme wizard"
@@ -162,7 +162,7 @@ alias mp.link='link.timetrack'
 #alias mp.app.offline='open -a /Applications/Warp.app; open -a /Users/ttardy/Applications/Timetrack.app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Notion.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Todoist.app'
 #alias mp.app.offline='open -a /Applications/Warp.app; open -a /Users/ttardy/Applications/Timetrack.app; open -a open -a /Applications/Microsoft\ Teams\ \(work\ or\ school\).app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Notion.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Todoist.app'
 #alias mp.app.offline='open -a /Applications/Warp.app; open -a /Users/ttardy/Applications/Timetrack.app; open -a /System/Applications/Mail.app; open -a open -a /Applications/Microsoft\ Teams\ \(work\ or\ school\).app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Notion.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Todoist.app'
-alias mp.app.offline='open -a /Applications/Warp.app; open -a /Users/ttardy/Applications/Timetrack.app; open -a /System/Applications/Mail.app; open -a open -a /Applications/Microsoft\ Teams\ \(work\ or\ school\).app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Notion.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Todoist.app; open -a /Applications/3CX\ Desktop\ App.app'
+alias mp.app.offline='open -a /Applications/Warp.app; open -a /Users/ttardy/Applications/Timetrack.app; open -a /System/Applications/Mail.app; open -a open -a /Applications/Microsoft\ Teams\ \(work\ or\ school\).app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Obsidian.app; open -a /Applications/Notion.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/Todoist.app; open -a /Applications/3CX\ Desktop\ App.app; open -a /System/Applications/Reminders.app'
 # alias mp.app='mp.app.offline; mp.mount.hengst.sysadmin; mp.mount.hengst.admin; mp.mount.hengst.projects'
 #alias mp.app='mp.app.offline; open -a /Applications/Google\ Chrome.app; open -a /Applications/Mountain.app'
 #alias mp.app='mp.app.offline; open -a /Applications/Mountain.app'
