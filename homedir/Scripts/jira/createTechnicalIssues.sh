@@ -3,7 +3,6 @@
 # stop execution whenever a command execution fails
 set -e
 
-#SUMMARY="Dependency Updates Februar 2024"
 SUMMARY="Teeeeeeeeeeeeest Summary"
 DESCRIPTION="Teeeeeeeeeeeeest Description"
 

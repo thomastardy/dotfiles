@@ -65,4 +65,4 @@ result=$(curl -s -X POST \
 #echo $result
 
 key=$(jq -r '.key' <<< $result)
-echo "create issue $JIRA_URL/browse/$key"
+echo "created issue $JIRA_URL/browse/$key"
