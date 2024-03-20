@@ -30,7 +30,7 @@ alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
 alias dos.2lf='dos2unix `find ./ -type f`'
 
 # Flush the DNS on Mac
-alias dns.flush='dscacheutil -flushcache'
+alias dns.flush='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
 
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
@@ -158,7 +158,7 @@ alias link.wiki='open https://mp-technology.atlassian.net/wiki/spaces/MPT/overvi
 alias mp.link='link.timetrack'
 #alias mp.app.offline='open -a /Applications/Warp.app; open -a /Users/ttardy/Applications/Timetrack.app; open -a /System/Applications/Mail.app; open -a open -a /Applications/Microsoft\ Teams\ \(work\ or\ school\).app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Obsidian.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/3CX\ Desktop\ App.app; open -a /System/Applications/Reminders.app'
 #alias mp.app.offline='open -a /Applications/Warp.app; open -a /Users/ttardy/Applications/Timetrack.app; open -a open -a /Applications/Microsoft\ Teams\ \(work\ or\ school\).app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Obsidian.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/3CX\ Desktop\ App.app; open -a /System/Applications/Reminders.app'
-alias mp.app.offline='open -a /Applications/Warp.app; open -a open -a /Applications/Microsoft\ Teams\ \(work\ or\ school\).app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Obsidian.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Applications/3CX\ Desktop\ App.app; open -a /System/Applications/Reminders.app'
+alias mp.app.offline='open -a /Applications/Warp.app; open -a open -a /Applications/Microsoft\ Teams\ \(work\ or\ school\).app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Obsidian.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /Users/ttardy/Applications/Chrome\ Apps.localized/3CX\ \(PWA\).app; open -a /System/Applications/Reminders.app'
 # alias mp.app='mp.app.offline; mp.mount.hengst.sysadmin; mp.mount.hengst.admin; mp.mount.hengst.projects'
 #alias mp.app='mp.app.offline; open -a /Applications/Google\ Chrome.app; open -a /Applications/Mountain.app'
 #alias mp.app='mp.app.offline; open -a /Applications/Mountain.app'
