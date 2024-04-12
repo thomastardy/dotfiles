@@ -219,6 +219,21 @@ alias ebiwin.cd='cd /Users/ttardy/Projects/eberhard/eberhard-windream-java-clien
 #alias ebiwin.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-windream-java-client -a iterm'
 alias ebiwin.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-windream-java-client -a warp'
 
+# mp aliases for Eberhard Ebi Kafka Sink
+alias ebi-kafka-sink.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-ebi-kafka-sink-pipeline/"'
+alias ebi-kafka-sink.link.pullrequests='open "https://github.com/mptechnology/eberhard-ebi-kafka-sink/pulls"'
+alias ebi-kafka-sink.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_eberhard-ebi-kafka-sink"'
+alias ebi-kafka-sink.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/724547/eLSA"'
+alias ebi-kafka-sink.link.jiraopeninrelease='open "https://mp-technology.atlassian.net/issues/?filter=13782"'
+alias ebi-kafka-sink.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/ELSA/boards/84"'
+alias ebi-kafka-sink.link='ebi-kafka-sink.link.jenkins; ebi-kafka-sink.link.pullrequests; ebi-kafka-sink.link.sonar; ebi-kafka-sink.link.wiki; ebi-kafka-sink.link.jiraopeninrelease; ebi-kafka-sink.link.jiraboard'
+alias ebi-kafka-sink.app='ebi-kafka-sink.cd.new; app.docker; app.intellij'
+alias ebi-kafka-sink.start='ebi-kafka-sink.app; ebi-kafka-sink.link'
+alias ebi-kafka-sink.docker.main='docker compose -p ebi-kafka-sink -f src/main/docker/postgresql.yml down && docker compose -p ebi-kafka-sink -f src/main/docker/postgresql.yml up --build'
+alias ebi-kafka-sink.docker.test='docker compose -p ebi-kafka-sink-test -f src/test/docker/postgresql-test.yml down && docker compose -p ebi-kafka-sink-test -f src/test/docker/postgresql-test.yml up'
+alias ebi-kafka-sink.cd='cd /Users/ttardy/Projects/eberhard/eberhard-ebi-kafka-sink'
+alias ebi-kafka-sink.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-ebi-kafka-sink -a warp'
+
 # mp aliases for Eberhard BO Kafka Adapter
 alias boka.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-bo-kafka-adapter-pipeline/"'
 alias boka.link.pullrequests='open "https://github.com/mptechnology/eberhard-bo-kafka-adapter/pulls"'
