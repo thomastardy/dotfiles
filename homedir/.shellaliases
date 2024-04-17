@@ -328,6 +328,18 @@ alias pca.cd='cd /Users/ttardy/Projects/perils/contacts'
 alias pca.cd.new='open /Users/ttardy/Projects/perils/contacts -a warp'
 alias pca.tunnel='/Users/ttardy/Projects/perils/contacts/src/main/scripts/tunnel/ssh_tunnel_contacts.sh'
 
+# mp aliases for Smarterion
+alias smart.link.pullrequests.backend='open "https://github.com/mptechnology/smarterion-shop-backend/pulls"'
+alias smart.link.pullrequests.plainservices='open "https://github.com/mptechnology/smarterion-shop-plainservices/pulls"'
+alias smart.link.pullrequests.frontend='open "https://github.com/mptechnology/smarterion-shop-frontend/pulls"'
+alias smart.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/smarterion/pages/86638595/Smarterion.Shop+Elbridge+Konfigurator"'
+alias smart.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/SSH/boards/94"'
+alias smart.link='smart.link.pullrequests.backend; smart.link.pullrequests.plainservices; smart.link.pullrequests.frontend; smart.link.wiki; smart.link.jiraboard'
+alias smart.app='smart.cd.new; app.intellij'
+alias smart.start='smart.app; smart.link'
+alias smart.cd='cd /Users/ttardy/Projects/smarterion'
+alias smart.cd.new='open /Users/ttardy/Projects/smarterion -a warp'
+
 # mp aliases for Perils
 alias per.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/PERILS/job/perils-portal-pipeline/"'
 alias per.link.pullrequests='open "https://github.com/mptechnology/perils-portal/pulls"'
