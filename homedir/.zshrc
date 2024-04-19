@@ -1,3 +1,9 @@
+# https://www.dotruby.com/tapas/profiling-zsh-setup-with-zprof https://gist.github.com/elalemanyo/cb3395af64ac23df2e0c3ded8bd63b2f
+if [ -n "${ZSH_DEBUGRC+1}" ]; then
+    zmodload zsh/zprof
+fi
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -23,7 +29,8 @@ export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.dotfiles/oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colorize compleat dirpersist git gulp gradle history cp docker docker-compose mvn macos npm screen kubectl helm ng)
+# plugins=(colorize compleat dirpersist git gulp gradle history cp docker docker-compose mvn macos npm screen helm ng)
+plugins=()
 
 ZSH_DISABLE_COMPFIX=true
 
@@ -70,3 +77,7 @@ source <(ng completion script)
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+if [ -n "${ZSH_DEBUGRC+1}" ]; then
+    zprof
+fi
