@@ -81,3 +81,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zprof
 fi
+
+# initialize pyenv
+eval "$(pyenv init --path)"
