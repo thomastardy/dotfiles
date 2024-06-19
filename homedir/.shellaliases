@@ -180,6 +180,21 @@ alias app.docker='open -a /Applications/Docker.app'
 alias app.keepingyouawake.toggle='osascript -e '"'"'tell application "System Events" to tell process "KeepingYouAwake" to click menu bar item 1 of menu bar 1'"'"''
 alias spring-crypto-cli='java -jar /Users/ttardy/Projects/mp/spring-crypto-cli/target/spring-crypto-cli-1.1.0-jar-with-dependencies.jar'
 
+# mp aliases for VitaBill App
+alias vitabill.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/VitaBill/job/vitabill-app-pipeline/"'
+alias vitabill.link.pullrequests='open "https://github.com/mptechnology/vitabill-app/pulls"'
+alias vitabill.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_vitabill-app"'
+alias vitabill.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/VitaBill"'
+alias vitabill.link.jiraopeninrelease='open "https://mp-technology.atlassian.net/issues/?filter=17614"'
+alias vitabill.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/VITABILL/boards/95"'
+alias vitabill.link='vitabill.link.jenkins; vitabill.link.pullrequests; vitabill.link.sonar; vitabill.link.wiki; vitabill.link.jiraopeninrelease; vitabill.link.jiraboard'
+alias vitabill.app='vitabill.cd.new; app.docker; app.intellij'
+alias vitabill.start='vitabill.app; vitabill.link'
+alias vitabill.docker.main='docker compose -p vitabill -f src/main/docker/postgresql.yml down && docker compose -p vitabill -f src/main/docker/postgresql.yml up --build'
+alias vitabill.docker.test='docker compose -p vitabill-test -f src/test/docker/docker-compose-test.yml down && docker compose -p vitabill-test -f src/test/docker/docker-compose-test.yml up'
+alias vitabill.cd='cd /Users/ttardy/Projects/vitabill/vitabill-app'
+alias vitabill.cd.new='open /Users/ttardy/Projects/vitabill/vitabill-app -a warp'
+
 # mp aliases for Eberhard eLSA
 alias elsa.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-elsa-pipeline/"'
 alias elsa.link.pullrequests='open "https://github.com/mptechnology/eberhard-elsa/pulls"'
