@@ -229,7 +229,7 @@ alias ebiwin.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-windream-java
 alias ebi-kafka-sink.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-ebi-kafka-sink-pipeline/"'
 alias ebi-kafka-sink.link.pullrequests='open "https://github.com/mptechnology/eberhard-ebi-kafka-sink/pulls"'
 alias ebi-kafka-sink.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_eberhard-ebi-kafka-sink"'
-alias ebi-kafka-sink.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/724547/eLSA"'
+alias ebi-kafka-sink.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/206045185/EbiKafkaSink"'
 alias ebi-kafka-sink.link.jiraopeninrelease='open "https://mp-technology.atlassian.net/issues/?filter=13782"'
 alias ebi-kafka-sink.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/ELSA/boards/84"'
 alias ebi-kafka-sink.link='ebi-kafka-sink.link.jenkins; ebi-kafka-sink.link.pullrequests; ebi-kafka-sink.link.sonar; ebi-kafka-sink.link.wiki; ebi-kafka-sink.link.jiraopeninrelease; ebi-kafka-sink.link.jiraboard'
