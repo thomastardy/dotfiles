@@ -209,7 +209,6 @@ alias elsa.docker.main='docker compose -p elsa -f src/main/docker/postgresql.yml
 alias elsa.docker.test='docker compose -p elsa-test -f src/test/docker/docker-compose-test.yml down && docker compose -p elsa-test -f src/test/docker/docker-compose-test.yml up'
 alias elsa.docker.test.old='docker compose -p elsa-test -f src/test/docker/postgresql-test.yml down && docker compose -p elsa-test -f src/test/docker/postgresql-test.yml up'
 alias elsa.cd='cd /Users/ttardy/Projects/eberhard/eberhard-elsa'
-#alias elsa.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-elsa -a iterm'
 alias elsa.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-elsa -a warp'
 
 # mp aliases for Eberhard Windream Java Client
@@ -222,7 +221,6 @@ alias ebiwin.link='ebiwin.link.jenkins; ebiwin.link.pullrequests; ebiwin.link.wi
 alias ebiwin.app='ebiwin.cd.new; app.intellij'
 alias ebiwin.start='ebiwin.app; ebiwin.link'
 alias ebiwin.cd='cd /Users/ttardy/Projects/eberhard/eberhard-windream-java-client'
-#alias ebiwin.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-windream-java-client -a iterm'
 alias ebiwin.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-windream-java-client -a warp'
 
 # mp aliases for Eberhard Ebi Kafka Sink
@@ -252,7 +250,6 @@ alias boka.app='boka.cd.new; app.docker; app.intellij'
 alias boka.start='boka.app; boka.link'
 alias boka.docker.main='docker compose -p bo-kafka-adapter -f src/main/docker/postgresql.yml down && docker compose -p bo-kafka-adapter -f src/main/docker/postgresql.yml up'
 alias boka.cd='cd /Users/ttardy/Projects/eberhard/eberhard-bo-kafka-adapter'
-#alias boka.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-bo-kafka-adapter -a iterm'
 alias boka.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-bo-kafka-adapter -a warp'
 
 # mp aliases for Eberhard Web PDF Editor
@@ -266,7 +263,6 @@ alias wpe.link='wpe.link.jenkins; wpe.link.pullrequests; wpe.link.sonar; wpe.lin
 alias wpe.app='wpe.cd.new; app.docker; app.intellij'
 alias wpe.start='wpe.app; wpe.link'
 alias wpe.cd='cd /Users/ttardy/Projects/eberhard/eberhard-web-pdf-editor'
-#alias wpe.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-web-pdf-editor -a iterm'
 alias wpe.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-web-pdf-editor -a warp'
 
 # mp aliases for Eberhard EbiWork
@@ -282,7 +278,6 @@ alias ebiwork.start='ebiwork.app; ebiwork.link'
 alias ebiwork.docker.main='docker compose -p ebi-work -f src/main/docker/postgresql.yml down && docker compose -p ebi-work -f src/main/docker/postgresql.yml up --build'
 alias ebiwork.docker.test='docker compose -p ebi-work-test -f src/test/docker/postgresql-test.yml down && docker compose -p ebi-work-test -f src/test/docker/postgresql-test.yml up --build'
 alias ebiwork.cd='cd /Users/ttardy/Projects/eberhard/eberhard-ebi-work'
-#alias ebiwork.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-ebi-work -a iterm'
 alias ebiwork.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-ebi-work -a warp'
 
 # mp aliases for Eberhard TRM Portal
@@ -298,7 +293,6 @@ alias trm.start='trm.app; trm.link'
 alias trm.docker.main='docker compose -p trm-portal -f src/main/docker/postgresql.yml down && docker compose -p trm-portal -f src/main/docker/postgresql.yml up --build'
 alias trm.docker.test='docker compose -p trm-portal-test -f src/test/docker/docker-compose-test.yml down && docker compose -p trm-portal-test -f src/test/docker/docker-compose-test.yml up'
 alias trm.cd='cd /Users/ttardy/Projects/eberhard/eberhard-trm-portal'
-#alias trm.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-trm-portal -a iterm'
 alias trm.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-trm-portal -a warp'
 
 # mp aliases for SAYANO
@@ -311,10 +305,9 @@ alias say.link.jiraboard='open "https://mp-technology.atlassian.net/jira/softwar
 alias say.link='say.link.jenkins; say.link.pullrequests; say.link.sonar; say.link.wiki; say.link.jiraopeninrelease; say.link.jiraboard'
 alias say.app='say.cd.new; app.docker; app.intellij'
 alias say.start='say.app; say.link'
-alias say.docker.main='docker compose -p sayano -f src/main/docker/mssql.yml down && docker compose -p sayano -f src/main/docker/mssql.yml up'
+alias say.docker.main='docker compose -p sayano -f src/main/docker/mssql.yml down && docker compose -p sayano -f src/main/docker/mssql.yml up --build'
 alias say.docker.test='docker compose -p sayano-test -f src/test/docker/mssql-test.yml down && docker compose -p sayano-test -f src/test/docker/mssql-test.yml up --build'
 alias say.cd='cd /Users/ttardy/Projects/sayano/sayano-app'
-#alias say.cd.new='open /Users/ttardy/Projects/sayano/sayano-app -a iterm'
 alias say.cd.new='open /Users/ttardy/Projects/sayano/sayano-app -a warp'
 
 # mp aliases for PERILS Contacts Application
@@ -330,9 +323,22 @@ alias pca.start='pca.app; pca.link'
 alias pca.docker.main='docker compose -p perils-contacts -f src/main/docker/postgresql.yml down && docker compose -p perils-contacts -f src/main/docker/postgresql.yml up'
 alias pca.docker.test='docker compose -p perils-contacts-test -f src/test/docker/postgresql-test.yml down && docker compose -p perils-contacts-test -f src/test/docker/postgresql-test.yml up'
 alias pca.cd='cd /Users/ttardy/Projects/perils/contacts'
-#alias pca.cd.new='open /Users/ttardy/Projects/perils/contacts -a iterm'
-alias pca.cd.new='open /Users/ttardy/Projects/perils/contacts -a warp'
-alias pca.tunnel='/Users/ttardy/Projects/perils/contacts/src/main/scripts/tunnel/ssh_tunnel_contacts.sh'
+alias pca.cd.new='open /Users/ttardy/Projects/perils/perils-contacts -a warp'
+alias pca.tunnel='/Users/ttardy/Projects/perils/perils-contacts/src/main/scripts/tunnel/ssh_tunnel_contacts.sh'
+
+# mp aliases for PERILS Platform
+alias ppf.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/PERILS/job/perils-platform-pipeline/"'
+alias ppf.link.pullrequests='open "https://github.com/mptechnology/perils-platform/pulls"'
+alias ppf.link.sonar='open "https://sonarcloud.io/summary/overall?id=mptechnology_perils-platform"'
+alias ppf.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/PP"'
+alias ppf.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/PPF/boards/96"'
+alias ppf.link='ppf.link.jenkins; ppf.link.pullrequests; ppf.link.sonar; ppf.link.wiki; ppf.link.jiraboard'
+alias ppf.app='ppf.cd.new; app.docker; app.intellij'
+alias ppf.start='ppf.app; ppf.link'
+alias ppf.docker.main='docker compose -p perils-platform -f src/main/docker/docker-compose.yml down && docker compose -p perils-platform -f src/main/docker/docker-compose.yml up'
+alias ppf.docker.test='docker compose -p perils-platform-test -f src/test/docker/docker-compose-test.yml down && docker compose -p perils-platform-test -f src/test/docker/docker-compose-test.yml up'
+alias ppf.cd='cd /Users/ttardy/Projects/perils/perils-platform'
+alias ppf.cd.new='open /Users/ttardy/Projects/perils/perils-platform -a warp'
 
 # mp aliases for Smarterion
 alias smart.link.pullrequests.backend='open "https://github.com/mptechnology/smarterion-shop-backend/pulls"'
@@ -357,7 +363,6 @@ alias per.start='per.app; per.link'
 alias per.docker.main='docker compose -p perils-portal -f perils-application/src/main/docker/oracle.yml down && docker compose -p perils-portal -f perils-application/src/main/docker/oracle.yml up'
 alias per.docker.test='docker compose -p perils-portal -f perils-application/src/test/docker/oracle-test.yml down && docker compose -p perils-portal -f perils-application/src/test/docker/oracle-test.yml up'
 alias per.cd='cd /Users/ttardy/Projects/perils/perils-portal'
-#alias per.cd.new='open /Users/ttardy/Projects/perils/perils-portal -a iterm'
 alias per.cd.new='open /Users/ttardy/Projects/perils/perils-portal -a warp'
 
 # mp aliases for Loss Forecast
@@ -371,7 +376,6 @@ alias plf.app='plf.cd.new; app.docker; app.intellij'
 alias plf.start='plf.app; plf.link'
 alias plf.docker.main='docker compose -p lossforecast -f src/main/docker/docker-compose.yml down && docker compose -p lossforecast -f src/main/docker/docker-compose.yml up'
 alias plf.cd='cd /Users/ttardy/Projects/perils/perils-lossforecast'
-#alias plf.cd.new='open /Users/ttardy/Projects/perils/perils-lossforecast -a iterm'
 alias plf.cd.new='open /Users/ttardy/Projects/perils/perils-lossforecast -a warp'
 
 # mp aliases for CRESTA CLIX
@@ -437,7 +441,6 @@ alias tardy.link='tardy.link.github'
 alias tardy.app='tardy.cd.new; app.intellij'
 alias tardy.start='tardy.app; tardy.link'
 alias tardy.cd='cd /Users/ttardy/Projects/tardy/tardy-site'
-#alias tardy.cd.new='open /Users/ttardy/Projects/tardy/tardy-site -a iterm'
 alias tardy.cd.new='open /Users/ttardy/Projects/tardy/tardy-site -a warp'
 
 # private aliases for Lunki's Würmlitaucher
@@ -446,7 +449,6 @@ alias wt.link='wt.link.github'
 alias wt.app='wt.cd.new; app.intellij'
 alias wt.start='wt.app; wt.link'
 alias wt.cd='cd /Users/ttardy/Projects/wt/wt-site'
-#alias wt.cd.new='open /Users/ttardy/Projects/wt/wt-site -a iterm'
 alias wt.cd.new='open /Users/ttardy/Projects/wt/wt-site -a warp'
 
 # private aliases for Landfrauen Hermetschwil-Staffeln
@@ -458,5 +460,4 @@ alias landfrauen.link='landfrauen.link.hetzner; landfrauen.link.github; landfrau
 alias landfrauen.app='landfrauen.cd.new; app.docker; app.intellij'
 alias landfrauen.start='landfrauen.app; landfrauen.link'
 alias landfrauen.cd='cd /Users/ttardy/Projects/landfrauen/landfrauen-site'
-#alias landfrauen.cd.new='open /Users/ttardy/Projects/landfrauen/landfrauen-site -a iterm'
 alias landfrauen.cd.new='open /Users/ttardy/Projects/landfrauen/landfrauen-site -a warp'
