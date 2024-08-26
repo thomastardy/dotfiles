@@ -178,7 +178,7 @@ alias app.postgres='open -a /Applications/Postgres.app'
 alias app.ytmusic='open -a /Applications/YT\ Music.app'
 alias app.docker='open -a /Applications/Docker.app'
 alias app.keepingyouawake.toggle='osascript -e '"'"'tell application "System Events" to tell process "KeepingYouAwake" to click menu bar item 1 of menu bar 1'"'"''
-alias spring-crypto-cli='java -jar /Users/ttardy/Projects/mp/spring-crypto-cli/target/spring-crypto-cli-1.1.0-jar-with-dependencies.jar'
+alias spring-crypto-cli='java -jar /Users/ttardy/Projects/mp/spring-crypto-cli/target/spring-crypto-cli-1.2-SNAPSHOT-jar-with-dependencies.jar'
 
 # mp aliases for VitaBill App
 alias vitabill.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/VitaBill/job/vitabill-app-pipeline/"'
