@@ -16,8 +16,8 @@ export PATH=/opt/homebrew/Cellar/postgresql@16/16.3/bin/:$PATH
 # The next line updates PATH for the Google Cloud SDK.
 #source "/Users/$(whoami)/Downloads/google-cloud-sdk/path.zsh.inc"
 
-# spring
-export PATH=$PATH:/Users/ttardy/Tools/spring-2.7.6/bin
-
 # mjml
 export PATH=$PATH:./node_modules/.bin
+
+# IntelliJ Toolbox
+export PATH=/Users/ttardy/Library/Application\ Support/JetBrains/Toolbox/scripts:$PATH

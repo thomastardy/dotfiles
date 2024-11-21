@@ -322,7 +322,7 @@ alias pca.app='pca.cd.new; app.docker; app.intellij'
 alias pca.start='pca.app; pca.link'
 alias pca.docker.main='docker compose -p perils-contacts -f src/main/docker/postgresql.yml down && docker compose -p perils-contacts -f src/main/docker/postgresql.yml up'
 alias pca.docker.test='docker compose -p perils-contacts-test -f src/test/docker/postgresql-test.yml down && docker compose -p perils-contacts-test -f src/test/docker/postgresql-test.yml up'
-alias pca.cd='cd /Users/ttardy/Projects/perils/contacts'
+alias pca.cd='cd /Users/ttardy/Projects/perils/perils-contacts'
 alias pca.cd.new='open /Users/ttardy/Projects/perils/perils-contacts -a warp'
 alias pca.tunnel='/Users/ttardy/Projects/perils/perils-contacts/src/main/scripts/tunnel/ssh_tunnel_contacts.sh'
 
