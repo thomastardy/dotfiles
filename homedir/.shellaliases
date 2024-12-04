@@ -151,6 +151,7 @@ alias npm.outdated.globals='npm outdated -g --depth=0'
 alias dotfiles.edit='idea /Users/ttardy/.dotfiles'
 alias dotfiles.cd='cd /Users/ttardy/.dotfiles'
 alias sys.prefs='open "x-apple.systempreferences:"'
+alias gen.passwd="LC_ALL=C tr -dc 'A-Za-z0-9!@$%&*_+' < /dev/urandom | head -c 25 | sed 's/^[!@#$%^&*()_+]/a/' | sed 's/[!@#$%^&*()_+]$/a/' | pbcopy"
 
 # mp aliases
 alias link.timetrack='open http://tt.mptechnology.ch'
