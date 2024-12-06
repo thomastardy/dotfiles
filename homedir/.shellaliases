@@ -332,7 +332,7 @@ alias pca.tunnel='/Users/ttardy/Projects/perils/perils-contacts/src/main/scripts
 alias ppf.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/PERILS/job/perils-platform-pipeline/"'
 alias ppf.link.pullrequests='open "https://github.com/mptechnology/perils-platform/pulls"'
 alias ppf.link.sonar='open "https://sonarcloud.io/summary/overall?id=mptechnology_perils-platform"'
-alias ppf.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/PP"'
+alias ppf.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/PER/pages/256147458/PERILS+Platform"'
 alias ppf.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/PPF/boards/96"'
 alias ppf.link='ppf.link.jenkins; ppf.link.pullrequests; ppf.link.sonar; ppf.link.wiki; ppf.link.jiraboard'
 alias ppf.app='ppf.cd.new; app.docker; app.intellij'
