@@ -158,7 +158,7 @@ alias gen.passwd.alphanumeric="LC_ALL=C tr -dc 'A-Za-z0-9' < /dev/urandom | head
 alias link.timetrack='open http://tt.mptechnology.ch'
 alias link.wiki='open https://mp-technology.atlassian.net/wiki/spaces/MPT/overview'
 alias mp.link='link.timetrack'
-alias mp.app='open -a /Applications/Warp.app; open -a /Applications/eM\ Client.app; open -a /Applications/Microsoft\ Teams.app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Obsidian.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /System/Applications/Reminders.app; open -a /Applications/TeamDrive/TeamDrive.app; open -a /Applications/Claude.app'
+alias mp.app='open -a /Applications/Warp.app; open -a /Applications/eM\ Client.app; open -a /Applications/Microsoft\ Teams.app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Obsidian.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /System/Applications/Reminders.app; open -a /Applications/TeamDrive/TeamDrive.app'
 alias mp.mount.hengst.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/sysadmin"'"'"''
 alias mp.mount.hengst.admin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/admin"'"'"''
 alias mp.mount.hengst.projects='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/projects"'"'"''
@@ -297,6 +297,19 @@ alias trm.docker.main='docker compose -p trm-portal -f src/main/docker/postgresq
 alias trm.docker.test='docker compose -p trm-portal-test -f src/test/docker/docker-compose-test.yml down && docker compose -p trm-portal-test -f src/test/docker/docker-compose-test.yml up'
 alias trm.cd='cd /Users/ttardy/Projects/eberhard/eberhard-trm-portal'
 alias trm.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-trm-portal -a warp'
+
+# mp aliases for Eberhard EAS - EBI AKIM Signature
+alias eas.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/Eberhard/job/eberhard-eas-pipeline/"'
+alias eas.link.pullrequests='open "https://github.com/mptechnology/eberhard-eas/pulls"'
+alias eas.link.sonar='open "https://sonarcloud.io/project/overview?id=mptechnology_eberhard-eas"'
+alias eas.link.wiki='open "https://mp-technology.atlassian.net/wiki/spaces/EB/pages/724547/eLSA"'
+alias eas.link.jiraopeninrelease='open "https://mp-technology.atlassian.net/issues/?filter=13782"'
+alias eas.link.jiraboard='open "https://mp-technology.atlassian.net/jira/software/c/projects/ELSA/boards/84"'
+alias eas.link='eas.link.jenkins; eas.link.pullrequests; eas.link.sonar; eas.link.wiki; eas.link.jiraopeninrelease; eas.link.jiraboard'
+alias eas.app='eas.cd.new; app.docker; app.intellij'
+alias eas.start='eas.app; eas.link'
+alias eas.cd='cd /Users/ttardy/Projects/eberhard/eberhard-eas'
+alias eas.cd.new='open /Users/ttardy/Projects/eberhard/eberhard-eas -a warp'
 
 # mp aliases for SAYANO
 alias say.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/SAYANO/job/sayano-app-pipeline/"'
