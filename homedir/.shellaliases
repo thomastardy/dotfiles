@@ -158,7 +158,7 @@ alias gen.passwd.alphanumeric="LC_ALL=C tr -dc 'A-Za-z0-9' < /dev/urandom | head
 alias link.timetrack='open http://tt.mptechnology.ch'
 alias link.wiki='open https://mp-technology.atlassian.net/wiki/spaces/MPT/overview'
 alias mp.link='link.timetrack'
-alias mp.app='open -a /Applications/Warp.app; open -a /Applications/eM\ Client.app; open -a /Applications/Microsoft\ Teams.app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Obsidian.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app; open -a /Applications/Slack.app; open -a /System/Applications/Reminders.app; open -a /Applications/TeamDrive/TeamDrive.app'
+alias mp.app='open -a /Applications/eM\ Client.app; open -a /Applications/Microsoft\ Teams.app; open -a /Applications/Microsoft\ Outlook.app; open -a /Applications/Obsidian.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app --args --profile-directory="Profile 2"; open -a /Applications/Slack.app; open -a /System/Applications/Reminders.app; open -a /Applications/TeamDrive/TeamDrive.app'
 alias mp.mount.hengst.sysadmin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/sysadmin"'"'"''
 alias mp.mount.hengst.admin='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/admin"'"'"''
 alias mp.mount.hengst.projects='osascript -e '"'"'tell application "Finder" to open location "smb://hengst/projects"'"'"''
@@ -182,6 +182,10 @@ alias app.ytmusic='open -a /Applications/YT\ Music.app'
 alias app.docker='open -a /Applications/Docker.app'
 alias app.keepingyouawake.toggle='osascript -e '"'"'tell application "System Events" to tell process "KeepingYouAwake" to click menu bar item 1 of menu bar 1'"'"''
 alias spring-crypto-cli='java -jar /Users/ttardy/Projects/mp/spring-crypto-cli/target/spring-crypto-cli-1.2-SNAPSHOT-jar-with-dependencies.jar'
+
+# private aliases
+alias private.app='open -a /Applications/eM\ Client.app; open -a /Applications/Obsidian.app; open -a /Applications/Fantastical.app; open -a /Applications/Google\ Chrome.app --args --profile-directory="Default"; open -a /System/Applications/Reminders.app'
+alias private.start='private.app; backup.speedup'
 
 # mp aliases for VitaBill App
 alias vitabill.link.jenkins='open "https://cloudbuild.mptechnology.ch/view/VitaBill/job/vitabill-app-pipeline/"'
